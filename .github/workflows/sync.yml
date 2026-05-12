@@ -28,7 +28,7 @@ jobs:
         run: node sync.js
 
       - name: Deploy to Netlify
-        run: npx netlify-cli deploy --prod --dir=public
+        run: ./node_modules/.bin/netlify deploy --prod --dir=public
         env:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
           NETLIFY_SITE_ID:    ${{ secrets.NETLIFY_SITE_ID }}

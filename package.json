@@ -9,7 +9,10 @@
   "dependencies": {
     "axios": "^1.7.9",
     "axios-cookiejar-support": "^4.0.7",
-    "tough-cookie": "^4.1.4",
-    "dotenv": "^16.4.5"
+    "dotenv": "^16.4.5",
+    "tough-cookie": "^4.1.4"
+  },
+  "devDependencies": {
+    "netlify-cli": "^26.0.1"
   }
 }
