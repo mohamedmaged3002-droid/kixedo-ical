@@ -27,16 +27,6 @@ jobs:
           KIXEDO_PASSWORD: ${{ secrets.KIXEDO_PASSWORD }}
         run: node sync.js
 
-      - name: Deploy to Netlify
-        run: |
-          cd public && zip -r ../deploy.zip . && cd ..
-          curl -sS -X POST \
-            -H "Authorization: Bearer ${{ secrets.NETLIFY_AUTH_TOKEN }}" \
-            -H "Content-Type: application/zip" \
-            --data-binary @deploy.zip \
-            "https://api.netlify.com/api/v1/sites/${{ secrets.NETLIFY_SITE_ID }}/deploys" \
-            | python3 -c "import sys,json; d=json.load(sys.stdin); print('Deploy ID:', d.get('id'), '| State:', d.get('state'))"
-
       - name: Commit updated .ics files
         run: |
           git config user.name  "kixedo-sync[bot]"
