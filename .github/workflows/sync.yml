@@ -27,6 +27,12 @@ jobs:
           KIXEDO_PASSWORD: ${{ secrets.KIXEDO_PASSWORD }}
         run: node sync.js
 
+      - name: Deploy to Netlify
+        run: npx netlify-cli deploy --prod --dir=public
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID:    ${{ secrets.NETLIFY_SITE_ID }}
+
       - name: Commit updated .ics files
         run: |
           git config user.name  "kixedo-sync[bot]"
