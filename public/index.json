@@ -1,0 +1,1678 @@
+{
+  "updatedAt": "2026-05-11T12:09:09.149Z",
+  "properties": [
+    {
+      "id": 7,
+      "title": "Arezo 112",
+      "number": "Arezo 112",
+      "compound": "Marassi",
+      "compoundId": 3
+    },
+    {
+      "id": 8,
+      "title": "Salerno 86",
+      "number": "Salerno 86",
+      "compound": "Marassi",
+      "compoundId": 3
+    },
+    {
+      "id": 9,
+      "title": "veneto 170",
+      "number": "veneto 170",
+      "compound": "Marassi",
+      "compoundId": 3
+    },
+    {
+      "id": 10,
+      "title": "Riva th75",
+      "number": "Riva th75",
+      "compound": "Marassi",
+      "compoundId": 3
+    },
+    {
+      "id": 11,
+      "title": "Marina2-LR-305",
+      "number": "Marina2-LR-305",
+      "compound": "Marassi",
+      "compoundId": 3
+    },
+    {
+      "id": 21,
+      "title": "Marina2- 6R- 302",
+      "number": "Marina2- 6R- 302",
+      "compound": "Marassi",
+      "compoundId": 3
+    },
+    {
+      "id": 23,
+      "title": "Marina2-4R-302",
+      "number": "Marina2-4R-302",
+      "compound": "Marassi",
+      "compoundId": 3
+    },
+    {
+      "id": 27,
+      "title": "Marina2- 8F-301",
+      "number": "Marina2- 8F-301",
+      "compound": "Marassi",
+      "compoundId": 3
+    },
+    {
+      "id": 28,
+      "title": "Marina2-14LR-404",
+      "number": "Marina2-14LR-404",
+      "compound": "Marassi",
+      "compoundId": 3
+    },
+    {
+      "id": 29,
+      "title": "Marina View - Turquoise 309",
+      "number": "Marina View - Turquoise 309",
+      "compound": "Marassi",
+      "compoundId": 3
+    },
+    {
+      "id": 30,
+      "title": "Marina View - Marina 208",
+      "number": "Marina View - Marina 208",
+      "compound": "Marassi",
+      "compoundId": 3
+    },
+    {
+      "id": 31,
+      "title": "Marina2-8F-202",
+      "number": "Marina2-8F-202",
+      "compound": "Marassi",
+      "compoundId": 3
+    },
+    {
+      "id": 32,
+      "title": "Marina View Azur 207",
+      "number": "Marina View Azur 207",
+      "compound": "Marassi",
+      "compoundId": 3
+    },
+    {
+      "id": 33,
+      "title": "Marina 2- 22L-205",
+      "number": "Marina 2- 22L-205",
+      "compound": "Marassi",
+      "compoundId": 3
+    },
+    {
+      "id": 36,
+      "title": "Marina View Sapphire 405",
+      "number": "Marina View Sapphire 405",
+      "compound": "Marassi",
+      "compoundId": 3
+    },
+    {
+      "id": 37,
+      "title": "Marina View Cyan 403",
+      "number": "Marina View Cyan 403",
+      "compound": "Marassi",
+      "compoundId": 3
+    },
+    {
+      "id": 43,
+      "title": "Marina2-16j-403",
+      "number": "Marina2-16j-403",
+      "compound": "Marassi",
+      "compoundId": 3
+    },
+    {
+      "id": 45,
+      "title": "Marina2-16j-303",
+      "number": "Marina2-16j-303",
+      "compound": "Marassi",
+      "compoundId": 3
+    },
+    {
+      "id": 51,
+      "title": "Marina2-2K202",
+      "number": "Marina2-2K202",
+      "compound": "Marassi",
+      "compoundId": 3
+    },
+    {
+      "id": 53,
+      "title": "Marina2-2K203",
+      "number": "Marina2-2K203",
+      "compound": "Marassi",
+      "compoundId": 3
+    },
+    {
+      "id": 56,
+      "title": "Address Beach 1014",
+      "number": "Address Beach 1014",
+      "compound": "Marassi",
+      "compoundId": 3
+    },
+    {
+      "id": 59,
+      "title": "Marina 13j-106",
+      "number": "Marina 13j-106",
+      "compound": "Marassi",
+      "compoundId": 3
+    },
+    {
+      "id": 60,
+      "title": "Marina2-22M-402",
+      "number": "Marina2-22M-402",
+      "compound": "Marassi",
+      "compoundId": 3
+    },
+    {
+      "id": 63,
+      "title": "Marina 2-20Y-401",
+      "number": "Marina 2-20Y-401",
+      "compound": "Marassi",
+      "compoundId": 3
+    },
+    {
+      "id": 69,
+      "title": "Catania F3-G03",
+      "number": "Catania F3-G03",
+      "compound": "Marassi",
+      "compoundId": 3
+    },
+    {
+      "id": 71,
+      "title": "Blanca -200/G03",
+      "number": "Blanca -200/G03",
+      "compound": "Marassi",
+      "compoundId": 3
+    },
+    {
+      "id": 72,
+      "title": "Blanca -102/G01",
+      "number": "Blanca -102/G01",
+      "compound": "Marassi",
+      "compoundId": 3
+    },
+    {
+      "id": 73,
+      "title": "Blanca -215/104",
+      "number": "Blanca -215/104",
+      "compound": "Marassi",
+      "compoundId": 3
+    },
+    {
+      "id": 74,
+      "title": "verdi 14F-104",
+      "number": "verdi 14F-104",
+      "compound": "Marassi",
+      "compoundId": 3
+    },
+    {
+      "id": 86,
+      "title": "Marina View Sky G05",
+      "number": "Marina View Sky G05",
+      "compound": "Marassi",
+      "compoundId": 3
+    },
+    {
+      "id": 87,
+      "title": "Marina View - Navy 11-106",
+      "number": "Marina View - Navy 11-106",
+      "compound": "Marassi",
+      "compoundId": 3
+    },
+    {
+      "id": 92,
+      "title": "Verdi 34",
+      "number": "Verdi 34",
+      "compound": "Marassi",
+      "compoundId": 3
+    },
+    {
+      "id": 97,
+      "title": "Marina 1 19E-206",
+      "number": "Marina 1 19E-206",
+      "compound": "Marassi",
+      "compoundId": 3
+    },
+    {
+      "id": 106,
+      "title": "Vectoria 54",
+      "number": "Vectoria 54",
+      "compound": "Marassi",
+      "compoundId": 3
+    },
+    {
+      "id": 322,
+      "title": "Arezo 62",
+      "number": "Arezo 62",
+      "compound": "Marassi",
+      "compoundId": 3
+    },
+    {
+      "id": 323,
+      "title": "Marina View Navy 11-301",
+      "number": "Marina View Navy 11-301",
+      "compound": "Marassi",
+      "compoundId": 3
+    },
+    {
+      "id": 329,
+      "title": "Address Beach TL-19",
+      "number": "Address Beach TL-19",
+      "compound": "Marassi",
+      "compoundId": 3
+    },
+    {
+      "id": 333,
+      "title": "Marina 1 -14DM-201",
+      "number": "Marina 1 -14DM-201",
+      "compound": "Marassi",
+      "compoundId": 3
+    },
+    {
+      "id": 12,
+      "title": "ST2 villa 29",
+      "number": "ST2 villa 29",
+      "compound": "Fouka Bay",
+      "compoundId": 4
+    },
+    {
+      "id": 13,
+      "title": "villa CL1-V29",
+      "number": "villa CL1-V29",
+      "compound": "Fouka Bay",
+      "compoundId": 4
+    },
+    {
+      "id": 14,
+      "title": "SA-2B-B02",
+      "number": "SA-2B-B02",
+      "compound": "Fouka Bay",
+      "compoundId": 4
+    },
+    {
+      "id": 17,
+      "title": "SA-8A-G03",
+      "number": "SA-8A-G03",
+      "compound": "Fouka Bay",
+      "compoundId": 4
+    },
+    {
+      "id": 19,
+      "title": "SA-9B-G02",
+      "number": "SA-9B-G02",
+      "compound": "Fouka Bay",
+      "compoundId": 4
+    },
+    {
+      "id": 20,
+      "title": "SA-4B-203",
+      "number": "SA-4B-203",
+      "compound": "Fouka Bay",
+      "compoundId": 4
+    },
+    {
+      "id": 25,
+      "title": "SA-9A-102",
+      "number": "SA-9A-102",
+      "compound": "Fouka Bay",
+      "compoundId": 4
+    },
+    {
+      "id": 26,
+      "title": "SA-5B-101",
+      "number": "SA-5B-101",
+      "compound": "Fouka Bay",
+      "compoundId": 4
+    },
+    {
+      "id": 38,
+      "title": "SA-5A-102",
+      "number": "SA-5A-102",
+      "compound": "Fouka Bay",
+      "compoundId": 4
+    },
+    {
+      "id": 39,
+      "title": "SA-1B-208",
+      "number": "SA-1B-208",
+      "compound": "Fouka Bay",
+      "compoundId": 4
+    },
+    {
+      "id": 40,
+      "title": "SA-1B-G01",
+      "number": "SA-1B-G01",
+      "compound": "Fouka Bay",
+      "compoundId": 4
+    },
+    {
+      "id": 41,
+      "title": "ST5-CH40-0201",
+      "number": "ST5-CH40-0201",
+      "compound": "Fouka Bay",
+      "compoundId": 4
+    },
+    {
+      "id": 42,
+      "title": "ST5-CH83-0101",
+      "number": "ST5-CH83-0101",
+      "compound": "Fouka Bay",
+      "compoundId": 4
+    },
+    {
+      "id": 44,
+      "title": "ST5-CH85-01-02",
+      "number": "ST5-CH85-01-02",
+      "compound": "Fouka Bay",
+      "compoundId": 4
+    },
+    {
+      "id": 48,
+      "title": "ST5-95-01-01",
+      "number": "ST5-95-01-01",
+      "compound": "Fouka Bay",
+      "compoundId": 4
+    },
+    {
+      "id": 52,
+      "title": "ST6-CH10-01",
+      "number": "ST6-CH10-01",
+      "compound": "Fouka Bay",
+      "compoundId": 4
+    },
+    {
+      "id": 54,
+      "title": "CL2-CH19-G01",
+      "number": "CL2-CH19-G01",
+      "compound": "Fouka Bay",
+      "compoundId": 4
+    },
+    {
+      "id": 55,
+      "title": "Cl3-CH6-02",
+      "number": "Cl3-CH6-02",
+      "compound": "Fouka Bay",
+      "compoundId": 4
+    },
+    {
+      "id": 57,
+      "title": "CL3-CH18-01",
+      "number": "CL3-CH18-01",
+      "compound": "Fouka Bay",
+      "compoundId": 4
+    },
+    {
+      "id": 58,
+      "title": "CL3-CH19-02",
+      "number": "CL3-CH19-02",
+      "compound": "Fouka Bay",
+      "compoundId": 4
+    },
+    {
+      "id": 61,
+      "title": "CL4-CH13-03",
+      "number": "CL4-CH13-03",
+      "compound": "Fouka Bay",
+      "compoundId": 4
+    },
+    {
+      "id": 62,
+      "title": "CL6 TW2 AG",
+      "number": "CL6 TW2 AG",
+      "compound": "Fouka Bay",
+      "compoundId": 4
+    },
+    {
+      "id": 90,
+      "title": "CL4-CH27-01",
+      "number": "CL4-CH27-01",
+      "compound": "Fouka Bay",
+      "compoundId": 4
+    },
+    {
+      "id": 95,
+      "title": "ST5-CH48-01",
+      "number": "ST5-CH48-01",
+      "compound": "Fouka Bay",
+      "compoundId": 4
+    },
+    {
+      "id": 110,
+      "title": "CL4-Ch34-03",
+      "number": "CL4-Ch34-03",
+      "compound": "Fouka Bay",
+      "compoundId": 4
+    },
+    {
+      "id": 111,
+      "title": "SA-6B-104",
+      "number": "SA-6B-104",
+      "compound": "Fouka Bay",
+      "compoundId": 4
+    },
+    {
+      "id": 112,
+      "title": "ST1-V15",
+      "number": "ST1-V15",
+      "compound": "Fouka Bay",
+      "compoundId": 4
+    },
+    {
+      "id": 113,
+      "title": "CL9-CH22-01",
+      "number": "CL9-CH22-01",
+      "compound": "Fouka Bay",
+      "compoundId": 4
+    },
+    {
+      "id": 128,
+      "title": "Cl3-tw3x-A.G",
+      "number": "Cl3-tw3x-A.G",
+      "compound": "Fouka Bay",
+      "compoundId": 4
+    },
+    {
+      "id": 132,
+      "title": "CL7-ch15-01",
+      "number": "CL7-ch15-01",
+      "compound": "Fouka Bay",
+      "compoundId": 4
+    },
+    {
+      "id": 135,
+      "title": "CL5-TW1-BF",
+      "number": "CL5-TW1-BF",
+      "compound": "Fouka Bay",
+      "compoundId": 4
+    },
+    {
+      "id": 330,
+      "title": "SA-8A-104",
+      "number": "SA-8A-104",
+      "compound": "Fouka Bay",
+      "compoundId": 4
+    },
+    {
+      "id": 332,
+      "title": "SA-5A-201",
+      "number": "SA-5A-201",
+      "compound": "Fouka Bay",
+      "compoundId": 4
+    },
+    {
+      "id": 64,
+      "title": "v70",
+      "number": "v70",
+      "compound": "Il Monte Galala",
+      "compoundId": 5
+    },
+    {
+      "id": 66,
+      "title": "CH15-02-01",
+      "number": "CH15-02-01",
+      "compound": "Il Monte Galala",
+      "compoundId": 5
+    },
+    {
+      "id": 230,
+      "title": "CH161-1-4",
+      "number": "CH161-1-4",
+      "compound": "Il Monte Galala",
+      "compoundId": 5
+    },
+    {
+      "id": 231,
+      "title": "C2-CH28-2-1",
+      "number": "C2-CH28-2-1",
+      "compound": "Il Monte Galala",
+      "compoundId": 5
+    },
+    {
+      "id": 130,
+      "title": "T2-15",
+      "number": "T2-15",
+      "compound": "Playa",
+      "compoundId": 6
+    },
+    {
+      "id": 321,
+      "title": "Playa - U9",
+      "number": "Playa - U9",
+      "compound": "Playa",
+      "compoundId": 6
+    },
+    {
+      "id": 116,
+      "title": "G-0-1",
+      "number": "G-0-1",
+      "compound": "Mynt Stay North 90",
+      "compoundId": 7
+    },
+    {
+      "id": 117,
+      "title": "G-0-2",
+      "number": "G-0-2",
+      "compound": "Mynt Stay North 90",
+      "compoundId": 7
+    },
+    {
+      "id": 118,
+      "title": "G-0-3",
+      "number": "G-0-3",
+      "compound": "Mynt Stay North 90",
+      "compoundId": 7
+    },
+    {
+      "id": 119,
+      "title": "G-0-4",
+      "number": "G-0-4",
+      "compound": "Mynt Stay North 90",
+      "compoundId": 7
+    },
+    {
+      "id": 120,
+      "title": "F-1-5",
+      "number": "F-1-5",
+      "compound": "Mynt Stay North 90",
+      "compoundId": 7
+    },
+    {
+      "id": 121,
+      "title": "F-1-6",
+      "number": "F-1-6",
+      "compound": "Mynt Stay North 90",
+      "compoundId": 7
+    },
+    {
+      "id": 122,
+      "title": "F-1-7",
+      "number": "F-1-7",
+      "compound": "Mynt Stay North 90",
+      "compoundId": 7
+    },
+    {
+      "id": 123,
+      "title": "F-1-8",
+      "number": "F-1-8",
+      "compound": "Mynt Stay North 90",
+      "compoundId": 7
+    },
+    {
+      "id": 124,
+      "title": "F-2-9",
+      "number": "F-2-9",
+      "compound": "Mynt Stay North 90",
+      "compoundId": 7
+    },
+    {
+      "id": 125,
+      "title": "F-2-10",
+      "number": "F-2-10",
+      "compound": "Mynt Stay North 90",
+      "compoundId": 7
+    },
+    {
+      "id": 126,
+      "title": "F-2-11",
+      "number": "F-2-11",
+      "compound": "Mynt Stay North 90",
+      "compoundId": 7
+    },
+    {
+      "id": 127,
+      "title": "F-2-12",
+      "number": "F-2-12",
+      "compound": "Mynt Stay North 90",
+      "compoundId": 7
+    },
+    {
+      "id": 147,
+      "title": "CFC 1A43",
+      "number": "CFC 1A43",
+      "compound": "Cairo Festival City",
+      "compoundId": 9
+    },
+    {
+      "id": 148,
+      "title": "CFC 1B54",
+      "number": "CFC 1B54",
+      "compound": "Cairo Festival City",
+      "compoundId": 9
+    },
+    {
+      "id": 151,
+      "title": "CFC 1b64",
+      "number": "CFC 1b64",
+      "compound": "Cairo Festival City",
+      "compoundId": 9
+    },
+    {
+      "id": 153,
+      "title": "CFC 1c33",
+      "number": "CFC 1c33",
+      "compound": "Cairo Festival City",
+      "compoundId": 9
+    },
+    {
+      "id": 158,
+      "title": "CFC 5K21",
+      "number": "CFC 5K21",
+      "compound": "Cairo Festival City",
+      "compoundId": 9
+    },
+    {
+      "id": 160,
+      "title": "CFC 5k51",
+      "number": "CFC 5k51",
+      "compound": "Cairo Festival City",
+      "compoundId": 9
+    },
+    {
+      "id": 163,
+      "title": "CFC 5k52",
+      "number": "CFC 5k52",
+      "compound": "Cairo Festival City",
+      "compoundId": 9
+    },
+    {
+      "id": 169,
+      "title": "CFC 2241",
+      "number": "CFC 2241",
+      "compound": "Cairo Festival City",
+      "compoundId": 9
+    },
+    {
+      "id": 171,
+      "title": "CFC 2242",
+      "number": "CFC 2242",
+      "compound": "Cairo Festival City",
+      "compoundId": 9
+    },
+    {
+      "id": 173,
+      "title": "CFC 2252",
+      "number": "CFC 2252",
+      "compound": "Cairo Festival City",
+      "compoundId": 9
+    },
+    {
+      "id": 175,
+      "title": "CFC 2754",
+      "number": "CFC 2754",
+      "compound": "Cairo Festival City",
+      "compoundId": 9
+    },
+    {
+      "id": 176,
+      "title": "CFC 3113",
+      "number": "CFC 3113",
+      "compound": "Cairo Festival City",
+      "compoundId": 9
+    },
+    {
+      "id": 177,
+      "title": "CFC 3711",
+      "number": "CFC 3711",
+      "compound": "Cairo Festival City",
+      "compoundId": 9
+    },
+    {
+      "id": 271,
+      "title": "Cfc Oriana  103",
+      "number": "Cfc Oriana  103",
+      "compound": "Cairo Festival City",
+      "compoundId": 9
+    },
+    {
+      "id": 149,
+      "title": "LV 32-4",
+      "number": "LV 32-4",
+      "compound": "Lake View Residence",
+      "compoundId": 10
+    },
+    {
+      "id": 150,
+      "title": "LV 2-8",
+      "number": "LV 2-8",
+      "compound": "Lake View Residence",
+      "compoundId": 10
+    },
+    {
+      "id": 154,
+      "title": "LV 21-06",
+      "number": "LV 21-06",
+      "compound": "Lake View Residence",
+      "compoundId": 10
+    },
+    {
+      "id": 155,
+      "title": "LV 26-1",
+      "number": "LV 26-1",
+      "compound": "Lake View Residence",
+      "compoundId": 10
+    },
+    {
+      "id": 156,
+      "title": "LV 42-8",
+      "number": "LV 42-8",
+      "compound": "Lake View Residence",
+      "compoundId": 10
+    },
+    {
+      "id": 157,
+      "title": "LV 56-9",
+      "number": "LV 56-9",
+      "compound": "Lake View Residence",
+      "compoundId": 10
+    },
+    {
+      "id": 161,
+      "title": "LV 60-11",
+      "number": "LV 60-11",
+      "compound": "Lake View Residence",
+      "compoundId": 10
+    },
+    {
+      "id": 162,
+      "title": "LV 95-11",
+      "number": "LV 95-11",
+      "compound": "Lake View Residence",
+      "compoundId": 10
+    },
+    {
+      "id": 164,
+      "title": "LV 64-11",
+      "number": "LV 64-11",
+      "compound": "Lake View Residence",
+      "compoundId": 10
+    },
+    {
+      "id": 165,
+      "title": "LV 48-4",
+      "number": "LV 48-4",
+      "compound": "Lake View Residence",
+      "compoundId": 10
+    },
+    {
+      "id": 166,
+      "title": "LV 99-12",
+      "number": "LV 99-12",
+      "compound": "Lake View Residence",
+      "compoundId": 10
+    },
+    {
+      "id": 288,
+      "title": "LV 46-4",
+      "number": "LV 46-4",
+      "compound": "Lake View Residence",
+      "compoundId": 10
+    },
+    {
+      "id": 289,
+      "title": "LV 115/11",
+      "number": "LV 115/11",
+      "compound": "Lake View Residence",
+      "compoundId": 10
+    },
+    {
+      "id": 168,
+      "title": "90 AV D1-32",
+      "number": "90 AV D1-32",
+      "compound": "90 Avenue",
+      "compoundId": 11
+    },
+    {
+      "id": 170,
+      "title": "90 AV E*1-g04",
+      "number": "90 AV E*1-g04",
+      "compound": "90 Avenue",
+      "compoundId": 11
+    },
+    {
+      "id": 172,
+      "title": "90 AV V10-E*2-G01",
+      "number": "90 AV V10-E*2-G01",
+      "compound": "90 Avenue",
+      "compoundId": 11
+    },
+    {
+      "id": 174,
+      "title": "90 AV M1-G03",
+      "number": "90 AV M1-G03",
+      "compound": "90 Avenue",
+      "compoundId": 11
+    },
+    {
+      "id": 178,
+      "title": "90 AV F2-G04",
+      "number": "90 AV F2-G04",
+      "compound": "90 Avenue",
+      "compoundId": 11
+    },
+    {
+      "id": 179,
+      "title": "90 AV D10-51",
+      "number": "90 AV D10-51",
+      "compound": "90 Avenue",
+      "compoundId": 11
+    },
+    {
+      "id": 180,
+      "title": "90 AV E1-G02",
+      "number": "90 AV E1-G02",
+      "compound": "90 Avenue",
+      "compoundId": 11
+    },
+    {
+      "id": 181,
+      "title": "90 AV D1-34",
+      "number": "90 AV D1-34",
+      "compound": "90 Avenue",
+      "compoundId": 11
+    },
+    {
+      "id": 182,
+      "title": "90 AV D1-51",
+      "number": "90 AV D1-51",
+      "compound": "90 Avenue",
+      "compoundId": 11
+    },
+    {
+      "id": 183,
+      "title": "90 AV D1-14",
+      "number": "90 AV D1-14",
+      "compound": "90 Avenue",
+      "compoundId": 11
+    },
+    {
+      "id": 184,
+      "title": "90 AV D1-54",
+      "number": "90 AV D1-54",
+      "compound": "90 Avenue",
+      "compoundId": 11
+    },
+    {
+      "id": 185,
+      "title": "90 AV D*2-12",
+      "number": "90 AV D*2-12",
+      "compound": "90 Avenue",
+      "compoundId": 11
+    },
+    {
+      "id": 186,
+      "title": "90 AV D*2-42",
+      "number": "90 AV D*2-42",
+      "compound": "90 Avenue",
+      "compoundId": 11
+    },
+    {
+      "id": 187,
+      "title": "90 AV D2-52",
+      "number": "90 AV D2-52",
+      "compound": "90 Avenue",
+      "compoundId": 11
+    },
+    {
+      "id": 188,
+      "title": "90 AV D1-44",
+      "number": "90 AV D1-44",
+      "compound": "90 Avenue",
+      "compoundId": 11
+    },
+    {
+      "id": 189,
+      "title": "90 AV V8-41",
+      "number": "90 AV V8-41",
+      "compound": "90 Avenue",
+      "compoundId": 11
+    },
+    {
+      "id": 190,
+      "title": "90 AV F3-34",
+      "number": "90 AV F3-34",
+      "compound": "90 Avenue",
+      "compoundId": 11
+    },
+    {
+      "id": 237,
+      "title": "90AV D2-34",
+      "number": "90AV D2-34",
+      "compound": "90 Avenue",
+      "compoundId": 11
+    },
+    {
+      "id": 240,
+      "title": "90 AV d1-43",
+      "number": "90 AV d1-43",
+      "compound": "90 Avenue",
+      "compoundId": 11
+    },
+    {
+      "id": 241,
+      "title": "90 AV V8-31",
+      "number": "90 AV V8-31",
+      "compound": "90 Avenue",
+      "compoundId": 11
+    },
+    {
+      "id": 266,
+      "title": "90 AV M1-G04",
+      "number": "90 AV M1-G04",
+      "compound": "90 Avenue",
+      "compoundId": 11
+    },
+    {
+      "id": 280,
+      "title": "90 AV D1-41",
+      "number": "90 AV D1-41",
+      "compound": "90 Avenue",
+      "compoundId": 11
+    },
+    {
+      "id": 281,
+      "title": "90 AV E*2-G03",
+      "number": "90 AV E*2-G03",
+      "compound": "90 Avenue",
+      "compoundId": 11
+    },
+    {
+      "id": 282,
+      "title": "90 AV V2-23",
+      "number": "90 AV V2-23",
+      "compound": "90 Avenue",
+      "compoundId": 11
+    },
+    {
+      "id": 290,
+      "title": "90 AV B11-34",
+      "number": "90 AV B11-34",
+      "compound": "90 Avenue",
+      "compoundId": 11
+    },
+    {
+      "id": 291,
+      "title": "90 AV B10-23",
+      "number": "90 AV B10-23",
+      "compound": "90 Avenue",
+      "compoundId": 11
+    },
+    {
+      "id": 292,
+      "title": "90 AV M2-54",
+      "number": "90 AV M2-54",
+      "compound": "90 Avenue",
+      "compoundId": 11
+    },
+    {
+      "id": 301,
+      "title": "90 AV D5-11",
+      "number": "90 AV D5-11",
+      "compound": "90 Avenue",
+      "compoundId": 11
+    },
+    {
+      "id": 302,
+      "title": "90 AV D5/11",
+      "number": "90 AV D5/11",
+      "compound": "90 Avenue",
+      "compoundId": 11
+    },
+    {
+      "id": 306,
+      "title": "90 AV M1-04",
+      "number": "90 AV M1-04",
+      "compound": "90 Avenue",
+      "compoundId": 11
+    },
+    {
+      "id": 312,
+      "title": "90 AV E*1-33",
+      "number": "90 AV E*1-33",
+      "compound": "90 Avenue",
+      "compoundId": 11
+    },
+    {
+      "id": 313,
+      "title": "90 AV V10-E*2-34",
+      "number": "90 AV V10-E*2-34",
+      "compound": "90 Avenue",
+      "compoundId": 11
+    },
+    {
+      "id": 191,
+      "title": "ZW E1-J1-1-1",
+      "number": "ZW E1-J1-1-1",
+      "compound": "ZED WEST",
+      "compoundId": 12
+    },
+    {
+      "id": 195,
+      "title": "ZW E1-E1-3-2",
+      "number": "ZW E1-E1-3-2",
+      "compound": "ZED WEST",
+      "compoundId": 12
+    },
+    {
+      "id": 196,
+      "title": "ZW E1-B2-8-3",
+      "number": "ZW E1-B2-8-3",
+      "compound": "ZED WEST",
+      "compoundId": 12
+    },
+    {
+      "id": 197,
+      "title": "ZW E1-A2-1-4",
+      "number": "ZW E1-A2-1-4",
+      "compound": "ZED WEST",
+      "compoundId": 12
+    },
+    {
+      "id": 204,
+      "title": "ZW E1-I1-2-3",
+      "number": "ZW E1-I1-2-3",
+      "compound": "ZED WEST",
+      "compoundId": 12
+    },
+    {
+      "id": 206,
+      "title": "ZW Y-A2-6-1",
+      "number": "ZW Y-A2-6-1",
+      "compound": "ZED WEST",
+      "compoundId": 12
+    },
+    {
+      "id": 207,
+      "title": "ZW Y-B2-9-4",
+      "number": "ZW Y-B2-9-4",
+      "compound": "ZED WEST",
+      "compoundId": 12
+    },
+    {
+      "id": 208,
+      "title": "ZW Y-B2-5-3",
+      "number": "ZW Y-B2-5-3",
+      "compound": "ZED WEST",
+      "compoundId": 12
+    },
+    {
+      "id": 209,
+      "title": "ZW E1-I2-5-2",
+      "number": "ZW E1-I2-5-2",
+      "compound": "ZED WEST",
+      "compoundId": 12
+    },
+    {
+      "id": 210,
+      "title": "ZW E1-J2-3-2",
+      "number": "ZW E1-J2-3-2",
+      "compound": "ZED WEST",
+      "compoundId": 12
+    },
+    {
+      "id": 211,
+      "title": "ZW E1-H1-4-1",
+      "number": "ZW E1-H1-4-1",
+      "compound": "ZED WEST",
+      "compoundId": 12
+    },
+    {
+      "id": 212,
+      "title": "ZW E1-E2-1-4",
+      "number": "ZW E1-E2-1-4",
+      "compound": "ZED WEST",
+      "compoundId": 12
+    },
+    {
+      "id": 213,
+      "title": "ZW E1-B2-1-1",
+      "number": "ZW E1-B2-1-1",
+      "compound": "ZED WEST",
+      "compoundId": 12
+    },
+    {
+      "id": 214,
+      "title": "ZW E1-A2-7-4",
+      "number": "ZW E1-A2-7-4",
+      "compound": "ZED WEST",
+      "compoundId": 12
+    },
+    {
+      "id": 215,
+      "title": "ZW E1-C2-4-3",
+      "number": "ZW E1-C2-4-3",
+      "compound": "ZED WEST",
+      "compoundId": 12
+    },
+    {
+      "id": 216,
+      "title": "ZW E1-A1-8-3",
+      "number": "ZW E1-A1-8-3",
+      "compound": "ZED WEST",
+      "compoundId": 12
+    },
+    {
+      "id": 217,
+      "title": "ZW E1-J2-4-3",
+      "number": "ZW E1-J2-4-3",
+      "compound": "ZED WEST",
+      "compoundId": 12
+    },
+    {
+      "id": 218,
+      "title": "ZW E1-I2-1-4",
+      "number": "ZW E1-I2-1-4",
+      "compound": "ZED WEST",
+      "compoundId": 12
+    },
+    {
+      "id": 219,
+      "title": "ZW E1-E2-1-3",
+      "number": "ZW E1-E2-1-3",
+      "compound": "ZED WEST",
+      "compoundId": 12
+    },
+    {
+      "id": 221,
+      "title": "ZW Y-A2-10-3",
+      "number": "ZW Y-A2-10-3",
+      "compound": "ZED WEST",
+      "compoundId": 12
+    },
+    {
+      "id": 223,
+      "title": "ZW E1-F-2-2",
+      "number": "ZW E1-F-2-2",
+      "compound": "ZED WEST",
+      "compoundId": 12
+    },
+    {
+      "id": 225,
+      "title": "ZW E1-B2-4-4",
+      "number": "ZW E1-B2-4-4",
+      "compound": "ZED WEST",
+      "compoundId": 12
+    },
+    {
+      "id": 226,
+      "title": "ZW E1-I2-4-4",
+      "number": "ZW E1-I2-4-4",
+      "compound": "ZED WEST",
+      "compoundId": 12
+    },
+    {
+      "id": 227,
+      "title": "ZW Y-C2-8-8",
+      "number": "ZW Y-C2-8-8",
+      "compound": "ZED WEST",
+      "compoundId": 12
+    },
+    {
+      "id": 228,
+      "title": "ZW E1-I1-8-2",
+      "number": "ZW E1-I1-8-2",
+      "compound": "ZED WEST",
+      "compoundId": 12
+    },
+    {
+      "id": 229,
+      "title": "ZW E1-C2-5-2",
+      "number": "ZW E1-C2-5-2",
+      "compound": "ZED WEST",
+      "compoundId": 12
+    },
+    {
+      "id": 242,
+      "title": "ZW E1-H2-3-3",
+      "number": "ZW E1-H2-3-3",
+      "compound": "ZED WEST",
+      "compoundId": 12
+    },
+    {
+      "id": 243,
+      "title": "ZW E1-F-2-3",
+      "number": "ZW E1-F-2-3",
+      "compound": "ZED WEST",
+      "compoundId": 12
+    },
+    {
+      "id": 244,
+      "title": "ZW E1-H1-8-2",
+      "number": "ZW E1-H1-8-2",
+      "compound": "ZED WEST",
+      "compoundId": 12
+    },
+    {
+      "id": 245,
+      "title": "ZW E1-D1-4-3",
+      "number": "ZW E1-D1-4-3",
+      "compound": "ZED WEST",
+      "compoundId": 12
+    },
+    {
+      "id": 246,
+      "title": "ZW E1-A2-1-3",
+      "number": "ZW E1-A2-1-3",
+      "compound": "ZED WEST",
+      "compoundId": 12
+    },
+    {
+      "id": 247,
+      "title": "ZW E1-F-5-1",
+      "number": "ZW E1-F-5-1",
+      "compound": "ZED WEST",
+      "compoundId": 12
+    },
+    {
+      "id": 248,
+      "title": "ZW E1-H2-7-4",
+      "number": "ZW E1-H2-7-4",
+      "compound": "ZED WEST",
+      "compoundId": 12
+    },
+    {
+      "id": 249,
+      "title": "ZW E1-J2-9-1",
+      "number": "ZW E1-J2-9-1",
+      "compound": "ZED WEST",
+      "compoundId": 12
+    },
+    {
+      "id": 250,
+      "title": "ZW E1-E1-2-1",
+      "number": "ZW E1-E1-2-1",
+      "compound": "ZED WEST",
+      "compoundId": 12
+    },
+    {
+      "id": 251,
+      "title": "ZW E1-H1-6-3",
+      "number": "ZW E1-H1-6-3",
+      "compound": "ZED WEST",
+      "compoundId": 12
+    },
+    {
+      "id": 252,
+      "title": "ZW Y-A2-7-10",
+      "number": "ZW Y-A2-7-10",
+      "compound": "ZED WEST",
+      "compoundId": 12
+    },
+    {
+      "id": 253,
+      "title": "ZW E1-I1-G-3",
+      "number": "ZW E1-I1-G-3",
+      "compound": "ZED WEST",
+      "compoundId": 12
+    },
+    {
+      "id": 254,
+      "title": "ZW Y-B1-4-1",
+      "number": "ZW Y-B1-4-1",
+      "compound": "ZED WEST",
+      "compoundId": 12
+    },
+    {
+      "id": 255,
+      "title": "ZW E1-F-7-1",
+      "number": "ZW E1-F-7-1",
+      "compound": "ZED WEST",
+      "compoundId": 12
+    },
+    {
+      "id": 256,
+      "title": "ZW Y-A1-5-1",
+      "number": "ZW Y-A1-5-1",
+      "compound": "ZED WEST",
+      "compoundId": 12
+    },
+    {
+      "id": 257,
+      "title": "ZW E1-G-5-3",
+      "number": "ZW E1-G-5-3",
+      "compound": "ZED WEST",
+      "compoundId": 12
+    },
+    {
+      "id": 258,
+      "title": "ZW E1-B1-9-3",
+      "number": "ZW E1-B1-9-3",
+      "compound": "ZED WEST",
+      "compoundId": 12
+    },
+    {
+      "id": 259,
+      "title": "ZW E1-D1-3-2",
+      "number": "ZW E1-D1-3-2",
+      "compound": "ZED WEST",
+      "compoundId": 12
+    },
+    {
+      "id": 260,
+      "title": "ZW E1-C1-4-3",
+      "number": "ZW E1-C1-4-3",
+      "compound": "ZED WEST",
+      "compoundId": 12
+    },
+    {
+      "id": 261,
+      "title": "ZW Y-A2-10-4",
+      "number": "ZW Y-A2-10-4",
+      "compound": "ZED WEST",
+      "compoundId": 12
+    },
+    {
+      "id": 264,
+      "title": "ZW E1-B2-7-1",
+      "number": "ZW E1-B2-7-1",
+      "compound": "ZED WEST",
+      "compoundId": 12
+    },
+    {
+      "id": 265,
+      "title": "ZW E1-C2-8-1",
+      "number": "ZW E1-C2-8-1",
+      "compound": "ZED WEST",
+      "compoundId": 12
+    },
+    {
+      "id": 285,
+      "title": "ZW E1-C2-6-2",
+      "number": "ZW E1-C2-6-2",
+      "compound": "ZED WEST",
+      "compoundId": 12
+    },
+    {
+      "id": 294,
+      "title": "ZW E1-E2-2-4",
+      "number": "ZW E1-E2-2-4",
+      "compound": "ZED WEST",
+      "compoundId": 12
+    },
+    {
+      "id": 296,
+      "title": "ZW Y-A2-10-1",
+      "number": "ZW Y-A2-10-1",
+      "compound": "ZED WEST",
+      "compoundId": 12
+    },
+    {
+      "id": 298,
+      "title": "ZW E1-E2-4-3",
+      "number": "ZW E1-E2-4-3",
+      "compound": "ZED WEST",
+      "compoundId": 12
+    },
+    {
+      "id": 303,
+      "title": "ZW Y-B2-12-4",
+      "number": "ZW Y-B2-12-4",
+      "compound": "ZED WEST",
+      "compoundId": 12
+    },
+    {
+      "id": 304,
+      "title": "ZW E1-D2-1-3",
+      "number": "ZW E1-D2-1-3",
+      "compound": "ZED WEST",
+      "compoundId": 12
+    },
+    {
+      "id": 309,
+      "title": "ZW E1-B1-10-1",
+      "number": "ZW E1-B1-10-1",
+      "compound": "ZED WEST",
+      "compoundId": 12
+    },
+    {
+      "id": 311,
+      "title": "ZW E1-A1-G-2",
+      "number": "ZW E1-A1-G-2",
+      "compound": "ZED WEST",
+      "compoundId": 12
+    },
+    {
+      "id": 315,
+      "title": "ZW Y-A2-12-2",
+      "number": "ZW Y-A2-12-2",
+      "compound": "ZED WEST",
+      "compoundId": 12
+    },
+    {
+      "id": 316,
+      "title": "ZW Y-D2-13-2",
+      "number": "ZW Y-D2-13-2",
+      "compound": "ZED WEST",
+      "compoundId": 12
+    },
+    {
+      "id": 318,
+      "title": "ZW Y-A2-5-3",
+      "number": "ZW Y-A2-5-3",
+      "compound": "ZED WEST",
+      "compoundId": 12
+    },
+    {
+      "id": 328,
+      "title": "ZW E2-L1-1-4",
+      "number": "ZW E2-L1-1-4",
+      "compound": "ZED WEST",
+      "compoundId": 12
+    },
+    {
+      "id": 192,
+      "title": "KAI A112",
+      "number": "KAI A112",
+      "compound": "KAI",
+      "compoundId": 13
+    },
+    {
+      "id": 193,
+      "title": "KAI G3103",
+      "number": "KAI G3103",
+      "compound": "KAI",
+      "compoundId": 13
+    },
+    {
+      "id": 263,
+      "title": "Kai G1010",
+      "number": "Kai G1010",
+      "compound": "KAI",
+      "compoundId": 13
+    },
+    {
+      "id": 220,
+      "title": "4season 15-30",
+      "number": "4season 15-30",
+      "compound": "Four Season Garden City",
+      "compoundId": 14
+    },
+    {
+      "id": 232,
+      "title": "D5 F-6B-64",
+      "number": "D5 F-6B-64",
+      "compound": "District 5",
+      "compoundId": 15
+    },
+    {
+      "id": 233,
+      "title": "D5 C-12A-21",
+      "number": "D5 C-12A-21",
+      "compound": "District 5",
+      "compoundId": 15
+    },
+    {
+      "id": 236,
+      "title": "D5 C- 1B-11",
+      "number": "D5 C- 1B-11",
+      "compound": "District 5",
+      "compoundId": 15
+    },
+    {
+      "id": 273,
+      "title": "D5 F8-12A",
+      "number": "D5 F8-12A",
+      "compound": "District 5",
+      "compoundId": 15
+    },
+    {
+      "id": 324,
+      "title": "D5 14B-21",
+      "number": "D5 14B-21",
+      "compound": "District 5",
+      "compoundId": 15
+    },
+    {
+      "id": 234,
+      "title": "Sodic Villette F-1H-32",
+      "number": "Sodic Villette F-1H-32",
+      "compound": "Sodic Villette",
+      "compoundId": 16
+    },
+    {
+      "id": 235,
+      "title": "Sodic Villette F2B-24",
+      "number": "Sodic Villette F2B-24",
+      "compound": "Sodic Villette",
+      "compoundId": 16
+    },
+    {
+      "id": 267,
+      "title": "Sodic villette1A-14",
+      "number": "Sodic villette1A-14",
+      "compound": "Sodic Villette",
+      "compoundId": 16
+    },
+    {
+      "id": 268,
+      "title": "Sodic villette 2E - 43",
+      "number": "Sodic villette 2E - 43",
+      "compound": "Sodic Villette",
+      "compoundId": 16
+    },
+    {
+      "id": 269,
+      "title": "Sodic Villette 2E-53",
+      "number": "Sodic Villette 2E-53",
+      "compound": "Sodic Villette",
+      "compoundId": 16
+    },
+    {
+      "id": 314,
+      "title": "Sodic Villette 4G-41",
+      "number": "Sodic Villette 4G-41",
+      "compound": "Sodic Villette",
+      "compoundId": 16
+    },
+    {
+      "id": 238,
+      "title": "Hyde Park PCB\\4B-2\\201",
+      "number": "Hyde Park PCB\\4B-2\\201",
+      "compound": "Hyde Park",
+      "compoundId": 17
+    },
+    {
+      "id": 239,
+      "title": "Hyde Park 4/1/302",
+      "number": "Hyde Park 4/1/302",
+      "compound": "Hyde Park",
+      "compoundId": 17
+    },
+    {
+      "id": 270,
+      "title": "Regent's Park C6-22",
+      "number": "Regent's Park C6-22",
+      "compound": "Regent's Park",
+      "compoundId": 18
+    },
+    {
+      "id": 272,
+      "title": "the village 21-23",
+      "number": "the village 21-23",
+      "compound": "The Village",
+      "compoundId": 19
+    },
+    {
+      "id": 274,
+      "title": "Eastown 25i-22",
+      "number": "Eastown 25i-22",
+      "compound": "Eastown",
+      "compoundId": 20
+    },
+    {
+      "id": 275,
+      "title": "Eastown 25D-31",
+      "number": "Eastown 25D-31",
+      "compound": "Eastown",
+      "compoundId": 20
+    },
+    {
+      "id": 276,
+      "title": "Eastown 20A43",
+      "number": "Eastown 20A43",
+      "compound": "Eastown",
+      "compoundId": 20
+    },
+    {
+      "id": 277,
+      "title": "Mirage D11",
+      "number": "Mirage D11",
+      "compound": "Mirage",
+      "compoundId": 21
+    },
+    {
+      "id": 278,
+      "title": "Mirage D16",
+      "number": "Mirage D16",
+      "compound": "Mirage",
+      "compoundId": 21
+    },
+    {
+      "id": 279,
+      "title": "Yasmin G01",
+      "number": "Yasmin G01",
+      "compound": "Yassmin",
+      "compoundId": 22
+    },
+    {
+      "id": 317,
+      "title": "Yassmin G02",
+      "number": "Yassmin G02",
+      "compound": "Yassmin",
+      "compoundId": 22
+    },
+    {
+      "id": 305,
+      "title": "Mivida C5 102",
+      "number": "Mivida C5 102",
+      "compound": "Mivida",
+      "compoundId": 23
+    },
+    {
+      "id": 319,
+      "title": "South Academy 01",
+      "number": "South Academy 01",
+      "compound": "South Academy",
+      "compoundId": 24
+    },
+    {
+      "id": 325,
+      "title": "Zamalek 18",
+      "number": "Zamalek 18",
+      "compound": "Zamalek",
+      "compoundId": 25
+    },
+    {
+      "id": 326,
+      "title": "EL Hayat C401",
+      "number": "EL Hayat C401",
+      "compound": "EL Hayat",
+      "compoundId": 26
+    },
+    {
+      "id": 327,
+      "title": "Vilory 01",
+      "number": "Vilory 01",
+      "compound": "Vilory Boutique",
+      "compoundId": 27
+    }
+  ]
+}
