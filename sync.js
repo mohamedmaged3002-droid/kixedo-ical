@@ -4,32 +4,11 @@ const path = require('path');
 const { KixedoClient } = require('./src/client');
 const { generateIcal } = require('./src/ical');
 
-// All 24 Kixedo compounds (from the property-availability filter dropdown)
+// Only the 3 compounds whose units are on bluekeys.co (Mynt North Coast)
 const COMPOUNDS = [
-  { id: 3,  name: 'Marassi' },
-  { id: 4,  name: 'Fouka Bay' },
-  { id: 5,  name: 'Il Monte Galala' },
-  { id: 6,  name: 'Playa' },
-  { id: 7,  name: 'Mynt Stay North 90' },
-  { id: 9,  name: 'Cairo Festival City' },
-  { id: 10, name: 'Lake View Residence' },
-  { id: 11, name: '90 Avenue' },
-  { id: 12, name: 'ZED WEST' },
-  { id: 13, name: 'KAI' },
-  { id: 14, name: 'Four Season Garden City' },
-  { id: 15, name: 'District 5' },
-  { id: 16, name: 'Sodic Villette' },
-  { id: 17, name: 'Hyde Park' },
-  { id: 18, name: "Regent's Park" },
-  { id: 19, name: 'The Village' },
-  { id: 20, name: 'Eastown' },
-  { id: 21, name: 'Mirage' },
-  { id: 22, name: 'Yassmin' },
-  { id: 23, name: 'Mivida' },
-  { id: 24, name: 'South Academy' },
-  { id: 25, name: 'Zamalek' },
-  { id: 26, name: 'EL Hayat' },
-  { id: 27, name: 'Vilory Boutique' },
+  { id: 3, name: 'Marassi' },
+  { id: 4, name: 'Fouka Bay' },
+  { id: 6, name: 'Playa' },
 ];
 
 async function main() {
@@ -51,6 +30,7 @@ async function main() {
   // property index: { id, title, compound, compoundId }
   const index = [];
   let totalEvents = 0;
+  const seenPropIds = new Set(); // deduplicate across compounds
 
   for (const compound of COMPOUNDS) {
     const props = await client.getProperties(compound.id);
@@ -61,6 +41,9 @@ async function main() {
     console.log(`${compound.name} (${compound.id}): ${props.length} properties`);
 
     for (const prop of props) {
+      if (seenPropIds.has(prop.id)) continue; // skip duplicates
+      seenPropIds.add(prop.id);
+
       process.stdout.write(`  [${prop.id}] ${prop.title} ... `);
       const bookings = await client.getBookings12Months(compound.id, prop.id);
       const ics = generateIcal(prop, bookings);
