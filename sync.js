@@ -4,6 +4,16 @@ const path = require('path');
 const { KixedoClient } = require('./src/client');
 const { generateIcal } = require('./src/ical');
 
+// Load manual blocks grouped by kixedo_id
+const MANUAL_BLOCKS_FILE = path.join(__dirname, 'manual-blocks.json');
+const allManualBlocks = JSON.parse(fs.readFileSync(MANUAL_BLOCKS_FILE, 'utf8'))
+  .filter(b => b.kixedo_id > 0); // skip the example entry
+const manualBlocksById = {};
+for (const b of allManualBlocks) {
+  if (!manualBlocksById[b.kixedo_id]) manualBlocksById[b.kixedo_id] = [];
+  manualBlocksById[b.kixedo_id].push(b);
+}
+
 // Only the 3 compounds whose units are on bluekeys.co (Mynt North Coast)
 const COMPOUNDS = [
   { id: 3, name: 'Marassi' },
@@ -46,9 +56,11 @@ async function main() {
 
       process.stdout.write(`  [${prop.id}] ${prop.title} ... `);
       const bookings = await client.getBookings12Months(compound.id, prop.id);
-      const ics = generateIcal(prop, bookings);
+      const manualBlocks = manualBlocksById[prop.id] || [];
+      const ics = generateIcal(prop, bookings, manualBlocks);
       fs.writeFileSync(path.join(outDir, `${prop.id}.ics`), ics, 'utf8');
-      console.log(`${bookings.length} events`);
+      const manualNote = manualBlocks.length ? ` (+${manualBlocks.length} manual)` : '';
+      console.log(`${bookings.length} events${manualNote}`);
       totalEvents += bookings.length;
       index.push({ id: prop.id, title: prop.title, number: prop.number, compound: compound.name, compoundId: compound.id });
     }
