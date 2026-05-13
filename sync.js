@@ -4,14 +4,25 @@ const path = require('path');
 const { KixedoClient } = require('./src/client');
 const { generateIcal } = require('./src/ical');
 
-// Load manual blocks grouped by kixedo_id
-const MANUAL_BLOCKS_FILE = path.join(__dirname, 'manual-blocks.json');
-const allManualBlocks = JSON.parse(fs.readFileSync(MANUAL_BLOCKS_FILE, 'utf8'))
-  .filter(b => b.kixedo_id > 0); // skip the example entry
-const manualBlocksById = {};
-for (const b of allManualBlocks) {
-  if (!manualBlocksById[b.kixedo_id]) manualBlocksById[b.kixedo_id] = [];
-  manualBlocksById[b.kixedo_id].push(b);
+// Load manual blocks from WP REST endpoint (set by mynt-blocked-dates.php plugin)
+// Falls back to manual-blocks.json if the endpoint isn't available
+async function loadManualBlocks() {
+  const WP_URL = (process.env.WP_URL || 'https://bluekeys.co').replace(/\/$/, '');
+  try {
+    const res = await fetch(`${WP_URL}/wp-json/mynt/v1/blocked`);
+    if (res.ok) {
+      const data = await res.json();
+      if (Array.isArray(data) && data.length > 0) {
+        console.log(`Loaded ${data.length} manual blocks from WP`);
+        return data;
+      }
+    }
+  } catch {}
+  // Fallback to local JSON
+  const file = path.join(__dirname, 'manual-blocks.json');
+  const data = JSON.parse(fs.readFileSync(file, 'utf8')).filter(b => b.kixedo_id > 0);
+  if (data.length) console.log(`Loaded ${data.length} manual blocks from manual-blocks.json`);
+  return data;
 }
 
 // Only the 3 compounds whose units are on bluekeys.co (Mynt North Coast)
@@ -36,6 +47,14 @@ async function main() {
   console.log('Logging in to Kixedo...');
   await client.login(email, password);
   console.log('Logged in.\n');
+
+  const allManualBlocks = await loadManualBlocks();
+  const manualBlocksById = {};
+  for (const b of allManualBlocks) {
+    const key = b.kixedo_id;
+    if (!manualBlocksById[key]) manualBlocksById[key] = [];
+    manualBlocksById[key].push(b);
+  }
 
   // property index: { id, title, compound, compoundId }
   const index = [];
