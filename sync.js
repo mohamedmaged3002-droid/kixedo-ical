@@ -40,7 +40,7 @@ async function main() {
     process.exit(1);
   }
 
-  const outDir = path.join(__dirname, 'public');
+  const outDir = path.join(__dirname, 'docs');
   fs.mkdirSync(outDir, { recursive: true });
 
   const client = new KixedoClient();

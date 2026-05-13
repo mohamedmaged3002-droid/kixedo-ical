@@ -8,7 +8,7 @@ const path = require('path');
 
 const WP_URL   = (process.env.WP_URL || 'https://bluekeys.co').replace(/\/$/, '');
 const MAPPING  = JSON.parse(fs.readFileSync(path.join(__dirname, 'wp-ical-mapping.json'), 'utf8'));
-const PUBLIC   = path.join(__dirname, 'public');
+const PUBLIC   = path.join(__dirname, 'docs');
 
 function fmtDate(d) { return d.replace(/-/g, ''); }
 function esc(t) { return String(t||'').replace(/[\\;,]/g, c=>'\\'+c).replace(/\n/g,'\\n'); }
