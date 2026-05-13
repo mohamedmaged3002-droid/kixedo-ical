@@ -23,6 +23,10 @@ jobs:
 
       - name: Patch iCal files with WP blocks
         run: node sync-blocks.js
+        env:
+          WP_URL: https://bluekeys.co
+          WP_USERNAME: ${{ secrets.WP_USERNAME }}
+          WP_APP_PASSWORD: ${{ secrets.WP_APP_PASSWORD }}
 
       - name: Commit if changed
         run: |
