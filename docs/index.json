@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-14T09:48:23.168Z",
+  "updatedAt": "2026-05-14T17:12:03.136Z",
   "properties": [
     {
       "id": 7,
@@ -292,6 +292,13 @@
       "id": 333,
       "title": "Marina 1 -14DM-201",
       "number": "Marina 1 -14DM-201",
+      "compound": "Marassi",
+      "compoundId": 3
+    },
+    {
+      "id": 340,
+      "title": "Vento 50",
+      "number": "Vento 50",
       "compound": "Marassi",
       "compoundId": 3
     },
