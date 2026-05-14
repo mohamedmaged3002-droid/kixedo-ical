@@ -2,7 +2,7 @@ name: Sync Kixedo iCal
 
 on:
   schedule:
-    - cron: '0 */3 * * *'   # every 3 hours
+    - cron: '*/15 * * * *'  # every 15 minutes
   workflow_dispatch:          # manual trigger from GitHub UI
 
 jobs:
