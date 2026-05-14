@@ -37,3 +37,10 @@ jobs:
           git add docs/
           git diff --cached --quiet && echo "No changes" || git commit -m "chore: sync ical $(date -u '+%Y-%m-%d %H:%M UTC')"
           git push
+
+      - name: Trigger WP Rentals iCal re-import on bluekeys.co
+        run: |
+          curl -s -X POST \
+            -u "${{ secrets.WP_USERNAME }}:${{ secrets.WP_APP_PASSWORD }}" \
+            "https://bluekeys.co/wp-json/mynt/v1/trigger-ical-import" \
+            | cat
