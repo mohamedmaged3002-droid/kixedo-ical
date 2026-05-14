@@ -3,7 +3,7 @@ const { wrapper } = require('axios-cookiejar-support');
 const { CookieJar } = require('tough-cookie');
 
 const BASE_URL = 'https://cp.mynt.kixedo.com';
-const DELAY_MS = 120;
+const DELAY_MS = 60;
 
 const sleep = ms => new Promise(r => setTimeout(r, ms));
 
@@ -84,7 +84,7 @@ class KixedoClient {
     const now = new Date();
     const allBookings = [];
 
-    for (let i = 0; i < 13; i++) {
+    for (let i = 0; i < 7; i++) {  // 7 months (current + 6 ahead) — enough for OTAs
       const d = new Date(now.getFullYear(), now.getMonth() + i, 1);
       const year = d.getFullYear();
       const month = d.getMonth() + 1;

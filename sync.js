@@ -73,28 +73,33 @@ async function main() {
   let totalEvents = 0;
   const seenPropIds = new Set(); // deduplicate across compounds
 
+  // Collect all unique properties across compounds first
+  const allProps = [];
   for (const compound of COMPOUNDS) {
     const props = await client.getProperties(compound.id);
-    if (!props.length) {
-      console.log(`  ${compound.name}: 0 properties — skipping`);
-      continue;
-    }
+    if (!props.length) { console.log(`  ${compound.name}: 0 properties — skipping`); continue; }
     console.log(`${compound.name} (${compound.id}): ${props.length} properties`);
-
     for (const prop of props) {
-      if (seenPropIds.has(prop.id)) continue; // skip duplicates
+      if (seenPropIds.has(prop.id)) continue;
       seenPropIds.add(prop.id);
+      allProps.push({ prop, compound });
+    }
+  }
 
-      process.stdout.write(`  [${prop.id}] ${prop.title} ... `);
+  // Fetch bookings in parallel — 5 properties at a time to avoid rate limiting
+  const CONCURRENCY = 5;
+  for (let i = 0; i < allProps.length; i += CONCURRENCY) {
+    const batch = allProps.slice(i, i + CONCURRENCY);
+    await Promise.all(batch.map(async ({ prop, compound }) => {
       const bookings = await client.getBookings12Months(compound.id, prop.id);
       const manualBlocks = manualBlocksById[prop.id] || [];
       const ics = generateIcal(prop, bookings, manualBlocks);
       fs.writeFileSync(path.join(outDir, `${prop.id}.ics`), ics, 'utf8');
       const manualNote = manualBlocks.length ? ` (+${manualBlocks.length} manual)` : '';
-      console.log(`${bookings.length} events${manualNote}`);
+      console.log(`  [${prop.id}] ${prop.title} — ${bookings.length} events${manualNote}`);
       totalEvents += bookings.length;
       index.push({ id: prop.id, title: prop.title, number: prop.number, compound: compound.name, compoundId: compound.id });
-    }
+    }));
   }
 
   // Write index.json — useful for building the WP post → Kixedo ID mapping
