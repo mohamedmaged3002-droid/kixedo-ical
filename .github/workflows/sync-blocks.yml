@@ -10,6 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+      actions: write
 
     steps:
       - uses: actions/checkout@v4
@@ -34,3 +35,18 @@ jobs:
           git config user.email "blocks-sync@users.noreply.github.com"
           git add docs/
           git diff --cached --quiet && echo "No changes" || (git commit -m "chore: update WP blocks $(date -u '+%Y-%m-%d %H:%M UTC')" && git push)
+
+      - name: Trigger Kixedo sync every ~15 min (every 3rd run of this workflow)
+        run: |
+          MINUTE=$(date -u +%M)
+          # Run at minutes :00, :15, :30, :45 (when minute is divisible by 15)
+          if [ $((10#$MINUTE % 15)) -lt 5 ]; then
+            echo "Triggering Kixedo sync..."
+            curl -s -X POST \
+              -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
+              -H "Accept: application/vnd.github+json" \
+              "https://api.github.com/repos/${{ github.repository }}/dispatches" \
+              -d '{"event_type":"trigger-kixedo-sync"}'
+          else
+            echo "Skipping Kixedo trigger this run (minute: $MINUTE)"
+          fi

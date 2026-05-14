@@ -4,6 +4,8 @@ on:
   schedule:
     - cron: '*/15 * * * *'  # every 15 minutes
   workflow_dispatch:          # manual trigger from GitHub UI
+  repository_dispatch:
+    types: [trigger-kixedo-sync]  # called by sync-blocks every 3rd run (~15 min)
 
 jobs:
   sync:
