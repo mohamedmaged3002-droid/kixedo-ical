@@ -25,6 +25,9 @@ jobs:
         env:
           KIXEDO_EMAIL:    ${{ secrets.KIXEDO_EMAIL }}
           KIXEDO_PASSWORD: ${{ secrets.KIXEDO_PASSWORD }}
+          WP_URL:          https://bluekeys.co
+          WP_USERNAME:     ${{ secrets.WP_USERNAME }}
+          WP_APP_PASSWORD: ${{ secrets.WP_APP_PASSWORD }}
         run: node sync.js
 
       - name: Commit updated .ics files

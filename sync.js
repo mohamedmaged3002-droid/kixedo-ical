@@ -4,25 +4,37 @@ const path = require('path');
 const { KixedoClient } = require('./src/client');
 const { generateIcal } = require('./src/ical');
 
-// Load manual blocks from WP REST endpoint (set by mynt-blocked-dates.php plugin)
-// Falls back to manual-blocks.json if the endpoint isn't available
+// Load manual blocks from WP REST endpoint (wp-blocked uses correct meta keys + auth)
+// Returns blocks with kixedo_id attached (translated via wp-ical-mapping.json)
 async function loadManualBlocks() {
-  const WP_URL = (process.env.WP_URL || 'https://bluekeys.co').replace(/\/$/, '');
+  const WP_URL  = (process.env.WP_URL  || 'https://bluekeys.co').replace(/\/$/, '');
+  const WP_USER = process.env.WP_USERNAME;
+  const WP_PASS = (process.env.WP_APP_PASSWORD || '').replace(/\s+/g, '');
+
+  // Build wp_post_id → kixedo_id lookup from mapping file
+  const mapping = JSON.parse(fs.readFileSync(path.join(__dirname, 'wp-ical-mapping.json'), 'utf8'));
+  const wpToKixedo = {};
+  for (const e of mapping) wpToKixedo[e.wp_post_id] = e.kixedo_id;
+
   try {
-    const res = await fetch(`${WP_URL}/wp-json/mynt/v1/blocked`);
+    const headers = {};
+    if (WP_USER && WP_PASS) {
+      headers['Authorization'] = 'Basic ' + Buffer.from(`${WP_USER}:${WP_PASS}`).toString('base64');
+    }
+    const res = await fetch(`${WP_URL}/wp-json/mynt/v1/wp-blocked`, { headers });
     if (res.ok) {
       const data = await res.json();
       if (Array.isArray(data) && data.length > 0) {
-        console.log(`Loaded ${data.length} manual blocks from WP`);
-        return data;
+        // Attach kixedo_id so sync.js can group by it
+        const withKixedo = data
+          .map(b => ({ ...b, kixedo_id: wpToKixedo[b.wp_post_id] }))
+          .filter(b => b.kixedo_id);
+        console.log(`Loaded ${withKixedo.length} WP blocks (of ${data.length} total)`);
+        return withKixedo;
       }
     }
   } catch {}
-  // Fallback to local JSON
-  const file = path.join(__dirname, 'manual-blocks.json');
-  const data = JSON.parse(fs.readFileSync(file, 'utf8')).filter(b => b.kixedo_id > 0);
-  if (data.length) console.log(`Loaded ${data.length} manual blocks from manual-blocks.json`);
-  return data;
+  return [];
 }
 
 // Only the 3 compounds whose units are on bluekeys.co (Mynt North Coast)
