@@ -35,6 +35,7 @@ function generateIcal(property, bookings, manualBlocks = []) {
       // detect that an event changed.
       `DTSTAMP:${stamp}`,
       `LAST-MODIFIED:${stamp}`,
+      'SEQUENCE:0',
       `DTSTART;VALUE=DATE:${start}`,
       `DTEND;VALUE=DATE:${end}`,
       `SUMMARY:${esc(b.type === 'booking' ? 'BLOCKED' : b.title)}`,
@@ -50,6 +51,7 @@ function generateIcal(property, bookings, manualBlocks = []) {
       `UID:manual-${b.start}-${b.end}@mynt.bluekeys.co`,
       `DTSTAMP:${stamp}`,
       `LAST-MODIFIED:${stamp}`,
+      'SEQUENCE:0',
       `DTSTART;VALUE=DATE:${fmtDate(b.start)}`,
       `DTEND;VALUE=DATE:${fmtDate(b.end)}`,
       `SUMMARY:${esc(b.summary || 'BLOCKED')}`,
