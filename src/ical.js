@@ -38,7 +38,11 @@ function generateIcal(property, bookings, manualBlocks = []) {
       'SEQUENCE:0',
       `DTSTART;VALUE=DATE:${start}`,
       `DTEND;VALUE=DATE:${end}`,
-      `SUMMARY:${esc(b.type === 'booking' ? 'BLOCKED' : b.title)}`,
+      // Every blocking event uses a clean, identical summary. Kixedo "restriction"
+      // events previously carried an odd title (e.g. "...#386 (Restriction)"); some
+      // OTAs only honor events they recognize as a block, so they silently ignored
+      // restrictions and showed those dates as available (double-booking risk).
+      'SUMMARY:BLOCKED',
       'STATUS:CONFIRMED',
       'TRANSP:OPAQUE',
       'END:VEVENT',
