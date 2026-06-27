@@ -2,6 +2,13 @@
   "updatedAt": "2026-06-27T23:04:27.284Z",
   "properties": [
     {
+      "id": 9,
+      "title": "Vento 170",
+      "number": "Vento 170",
+      "compound": "Marassi",
+      "compoundId": 3
+    },
+    {
       "id": 8,
       "title": "Salerno 86",
       "number": "Salerno 86",
@@ -37,9 +44,9 @@
       "compoundId": 3
     },
     {
-      "id": 28,
-      "title": "Marina2-14LR-404",
-      "number": "Marina2-14LR-404",
+      "id": 27,
+      "title": "Marina2- 8F-301",
+      "number": "Marina2- 8F-301",
       "compound": "Marassi",
       "compoundId": 3
     },
@@ -149,9 +156,9 @@
       "compoundId": 3
     },
     {
-      "id": 56,
-      "title": "Address Beach 1014",
-      "number": "Address Beach 1014",
+      "id": 60,
+      "title": "Marina2-22M-402",
+      "number": "Marina2-22M-402",
       "compound": "Marassi",
       "compoundId": 3
     },
@@ -303,9 +310,9 @@
       "compoundId": 3
     },
     {
-      "id": 345,
-      "title": "Faya 10-408",
-      "number": "Faya 10-408",
+      "id": 342,
+      "title": "Greek Village 17D-302",
+      "number": "Greek Village 17D-302",
       "compound": "Marassi",
       "compoundId": 3
     },
@@ -317,9 +324,9 @@
       "compoundId": 3
     },
     {
-      "id": 367,
-      "title": "Marina West 19Z-403",
-      "number": "Marina West 19Z-403",
+      "id": 368,
+      "title": "Verdi - 17E - 101",
+      "number": "Verdi - 17E - 101",
       "compound": "Marassi",
       "compoundId": 3
     },
@@ -737,6 +744,13 @@
       "compoundId": 4
     },
     {
+      "id": 364,
+      "title": "ST1-V22",
+      "number": "ST1-V22",
+      "compound": "Fouka Bay",
+      "compoundId": 4
+    },
+    {
       "id": 366,
       "title": "CL9-TW3-A",
       "number": "CL9-TW3-A",
@@ -744,9 +758,9 @@
       "compoundId": 4
     },
     {
-      "id": 364,
-      "title": "ST1-V22",
-      "number": "ST1-V22",
+      "id": 363,
+      "title": "CL10-Ch12A-01",
+      "number": "CL10-Ch12A-01",
       "compound": "Fouka Bay",
       "compoundId": 4
     },
