@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-24T09:56:20.972Z",
+  "updatedAt": "2026-07-24T11:43:40.352Z",
   "properties": [
     {
       "id": 8,
@@ -12,6 +12,13 @@
       "id": 7,
       "title": "Arezo 112",
       "number": "Arezo 112",
+      "compound": "Marassi",
+      "compoundId": 3
+    },
+    {
+      "id": 11,
+      "title": "Marina2-14LR-305",
+      "number": "Marina2-14LR-305",
       "compound": "Marassi",
       "compoundId": 3
     },
@@ -30,23 +37,9 @@
       "compoundId": 3
     },
     {
-      "id": 11,
-      "title": "Marina2-14LR-305",
-      "number": "Marina2-14LR-305",
-      "compound": "Marassi",
-      "compoundId": 3
-    },
-    {
-      "id": 28,
-      "title": "Marina2-14LR-404",
-      "number": "Marina2-14LR-404",
-      "compound": "Marassi",
-      "compoundId": 3
-    },
-    {
-      "id": 27,
-      "title": "Marina2- 8F-301",
-      "number": "Marina2- 8F-301",
+      "id": 21,
+      "title": "Marina2- 6R- 302",
+      "number": "Marina2- 6R- 302",
       "compound": "Marassi",
       "compoundId": 3
     },
@@ -65,23 +58,16 @@
       "compoundId": 3
     },
     {
-      "id": 21,
-      "title": "Marina2- 6R- 302",
-      "number": "Marina2- 6R- 302",
+      "id": 27,
+      "title": "Marina2- 8F-301",
+      "number": "Marina2- 8F-301",
       "compound": "Marassi",
       "compoundId": 3
     },
     {
-      "id": 31,
-      "title": "Marina2-8F-202",
-      "number": "Marina2-8F-202",
-      "compound": "Marassi",
-      "compoundId": 3
-    },
-    {
-      "id": 36,
-      "title": "Marina View Sapphire 405",
-      "number": "Marina View Sapphire 405",
+      "id": 28,
+      "title": "Marina2-14LR-404",
+      "number": "Marina2-14LR-404",
       "compound": "Marassi",
       "compoundId": 3
     },
@@ -93,6 +79,13 @@
       "compoundId": 3
     },
     {
+      "id": 32,
+      "title": "Marina View Azur 207",
+      "number": "Marina View Azur 207",
+      "compound": "Marassi",
+      "compoundId": 3
+    },
+    {
       "id": 33,
       "title": "Marina 2- 22L-205",
       "number": "Marina 2- 22L-205",
@@ -100,9 +93,16 @@
       "compoundId": 3
     },
     {
-      "id": 32,
-      "title": "Marina View Azur 207",
-      "number": "Marina View Azur 207",
+      "id": 36,
+      "title": "Marina View Sapphire 405",
+      "number": "Marina View Sapphire 405",
+      "compound": "Marassi",
+      "compoundId": 3
+    },
+    {
+      "id": 31,
+      "title": "Marina2-8F-202",
+      "number": "Marina2-8F-202",
       "compound": "Marassi",
       "compoundId": 3
     },
@@ -142,23 +142,9 @@
       "compoundId": 3
     },
     {
-      "id": 59,
-      "title": "Marina 13j-106",
-      "number": "Marina 13j-106",
-      "compound": "Marassi",
-      "compoundId": 3
-    },
-    {
       "id": 60,
       "title": "Marina2-22M-402",
       "number": "Marina2-22M-402",
-      "compound": "Marassi",
-      "compoundId": 3
-    },
-    {
-      "id": 56,
-      "title": "Address Beach 1014",
-      "number": "Address Beach 1014",
       "compound": "Marassi",
       "compoundId": 3
     },
@@ -170,30 +156,23 @@
       "compoundId": 3
     },
     {
+      "id": 56,
+      "title": "Address Beach 1014",
+      "number": "Address Beach 1014",
+      "compound": "Marassi",
+      "compoundId": 3
+    },
+    {
+      "id": 59,
+      "title": "Marina 13j-106",
+      "number": "Marina 13j-106",
+      "compound": "Marassi",
+      "compoundId": 3
+    },
+    {
       "id": 69,
       "title": "Catania F3-G03",
       "number": "Catania F3-G03",
-      "compound": "Marassi",
-      "compoundId": 3
-    },
-    {
-      "id": 87,
-      "title": "Marina View - Navy 11-106",
-      "number": "Marina View - Navy 11-106",
-      "compound": "Marassi",
-      "compoundId": 3
-    },
-    {
-      "id": 86,
-      "title": "Marina View Sky G05",
-      "number": "Marina View Sky G05",
-      "compound": "Marassi",
-      "compoundId": 3
-    },
-    {
-      "id": 74,
-      "title": "verdi 14F-104",
-      "number": "verdi 14F-104",
       "compound": "Marassi",
       "compoundId": 3
     },
@@ -205,9 +184,30 @@
       "compoundId": 3
     },
     {
+      "id": 86,
+      "title": "Marina View Sky G05",
+      "number": "Marina View Sky G05",
+      "compound": "Marassi",
+      "compoundId": 3
+    },
+    {
+      "id": 87,
+      "title": "Marina View - Navy 11-106",
+      "number": "Marina View - Navy 11-106",
+      "compound": "Marassi",
+      "compoundId": 3
+    },
+    {
       "id": 72,
       "title": "Blanca -102/G01",
       "number": "Blanca -102/G01",
+      "compound": "Marassi",
+      "compoundId": 3
+    },
+    {
+      "id": 74,
+      "title": "verdi 14F-104",
+      "number": "verdi 14F-104",
       "compound": "Marassi",
       "compoundId": 3
     },
@@ -219,13 +219,6 @@
       "compoundId": 3
     },
     {
-      "id": 108,
-      "title": "Marina View - Waters 9-207",
-      "number": "Marina View - Waters 9-207",
-      "compound": "Marassi",
-      "compoundId": 3
-    },
-    {
       "id": 140,
       "title": "Marina View - Waters 9-401",
       "number": "Marina View - Waters 9-401",
@@ -233,9 +226,9 @@
       "compoundId": 3
     },
     {
-      "id": 97,
-      "title": "Marina 1 19E-206",
-      "number": "Marina 1 19E-206",
+      "id": 108,
+      "title": "Marina View - Waters 9-207",
+      "number": "Marina View - Waters 9-207",
       "compound": "Marassi",
       "compoundId": 3
     },
@@ -247,9 +240,9 @@
       "compoundId": 3
     },
     {
-      "id": 323,
-      "title": "Marina View Navy 11-301",
-      "number": "Marina View Navy 11-301",
+      "id": 97,
+      "title": "Marina 1 19E-206",
+      "number": "Marina 1 19E-206",
       "compound": "Marassi",
       "compoundId": 3
     },
@@ -257,6 +250,20 @@
       "id": 142,
       "title": "Marina2-14MR-304",
       "number": "Marina2-14MR-304",
+      "compound": "Marassi",
+      "compoundId": 3
+    },
+    {
+      "id": 323,
+      "title": "Marina View Navy 11-301",
+      "number": "Marina View Navy 11-301",
+      "compound": "Marassi",
+      "compoundId": 3
+    },
+    {
+      "id": 322,
+      "title": "Arezo 62",
+      "number": "Arezo 62",
       "compound": "Marassi",
       "compoundId": 3
     },
@@ -275,30 +282,9 @@
       "compoundId": 3
     },
     {
-      "id": 322,
-      "title": "Arezo 62",
-      "number": "Arezo 62",
-      "compound": "Marassi",
-      "compoundId": 3
-    },
-    {
-      "id": 333,
-      "title": "Marina 1 -14DM-201",
-      "number": "Marina 1 -14DM-201",
-      "compound": "Marassi",
-      "compoundId": 3
-    },
-    {
-      "id": 342,
-      "title": "Greek Village 17D-302",
-      "number": "Greek Village 17D-302",
-      "compound": "Marassi",
-      "compoundId": 3
-    },
-    {
-      "id": 345,
-      "title": "Faya 10-408",
-      "number": "Faya 10-408",
+      "id": 340,
+      "title": "Vento 50",
+      "number": "Vento 50",
       "compound": "Marassi",
       "compoundId": 3
     },
@@ -310,30 +296,23 @@
       "compoundId": 3
     },
     {
-      "id": 340,
-      "title": "Vento 50",
-      "number": "Vento 50",
+      "id": 342,
+      "title": "Greek Village 17D-302",
+      "number": "Greek Village 17D-302",
       "compound": "Marassi",
       "compoundId": 3
     },
     {
-      "id": 12,
-      "title": "ST2 villa 29",
-      "number": "ST2 villa 29",
-      "compound": "Fouka Bay",
-      "compoundId": 4
-    },
-    {
-      "id": 368,
-      "title": "Verdi - 17E - 101",
-      "number": "Verdi - 17E - 101",
+      "id": 333,
+      "title": "Marina 1 -14DM-201",
+      "number": "Marina 1 -14DM-201",
       "compound": "Marassi",
       "compoundId": 3
     },
     {
-      "id": 367,
-      "title": "Marina West 19Z-403",
-      "number": "Marina West 19Z-403",
+      "id": 345,
+      "title": "Faya 10-408",
+      "number": "Faya 10-408",
       "compound": "Marassi",
       "compoundId": 3
     },
@@ -350,6 +329,27 @@
       "number": "Veneto 115",
       "compound": "Marassi",
       "compoundId": 3
+    },
+    {
+      "id": 368,
+      "title": "Verdi - 17E - 101",
+      "number": "Verdi - 17E - 101",
+      "compound": "Marassi",
+      "compoundId": 3
+    },
+    {
+      "id": 367,
+      "title": "Marina West 19Z-403",
+      "number": "Marina West 19Z-403",
+      "compound": "Marassi",
+      "compoundId": 3
+    },
+    {
+      "id": 12,
+      "title": "ST2 villa 29",
+      "number": "ST2 villa 29",
+      "compound": "Fouka Bay",
+      "compoundId": 4
     },
     {
       "id": 13,
@@ -373,13 +373,6 @@
       "compoundId": 4
     },
     {
-      "id": 19,
-      "title": "SA-9B-G02",
-      "number": "SA-9B-G02",
-      "compound": "Fouka Bay",
-      "compoundId": 4
-    },
-    {
       "id": 20,
       "title": "SA-4B-203",
       "number": "SA-4B-203",
@@ -387,30 +380,9 @@
       "compoundId": 4
     },
     {
-      "id": 26,
-      "title": "SA-5B-101",
-      "number": "SA-5B-101",
-      "compound": "Fouka Bay",
-      "compoundId": 4
-    },
-    {
-      "id": 42,
-      "title": "ST5-CH83-0101",
-      "number": "ST5-CH83-0101",
-      "compound": "Fouka Bay",
-      "compoundId": 4
-    },
-    {
-      "id": 40,
-      "title": "SA-1B-B01",
-      "number": "SA-1B-B01",
-      "compound": "Fouka Bay",
-      "compoundId": 4
-    },
-    {
-      "id": 38,
-      "title": "SA-5A-102",
-      "number": "SA-5A-102",
+      "id": 19,
+      "title": "SA-9B-G02",
+      "number": "SA-9B-G02",
       "compound": "Fouka Bay",
       "compoundId": 4
     },
@@ -422,16 +394,37 @@
       "compoundId": 4
     },
     {
-      "id": 54,
-      "title": "CL2-CH19-G01",
-      "number": "CL2-CH19-G01",
+      "id": 26,
+      "title": "SA-5B-101",
+      "number": "SA-5B-101",
       "compound": "Fouka Bay",
       "compoundId": 4
     },
     {
-      "id": 58,
-      "title": "CL3-CH19-02",
-      "number": "CL3-CH19-02",
+      "id": 40,
+      "title": "SA-1B-B01",
+      "number": "SA-1B-B01",
+      "compound": "Fouka Bay",
+      "compoundId": 4
+    },
+    {
+      "id": 42,
+      "title": "ST5-CH83-0101",
+      "number": "ST5-CH83-0101",
+      "compound": "Fouka Bay",
+      "compoundId": 4
+    },
+    {
+      "id": 38,
+      "title": "SA-5A-102",
+      "number": "SA-5A-102",
+      "compound": "Fouka Bay",
+      "compoundId": 4
+    },
+    {
+      "id": 54,
+      "title": "CL2-CH19-G01",
+      "number": "CL2-CH19-G01",
       "compound": "Fouka Bay",
       "compoundId": 4
     },
@@ -443,13 +436,6 @@
       "compoundId": 4
     },
     {
-      "id": 57,
-      "title": "CL3-CH18-01",
-      "number": "CL3-CH18-01",
-      "compound": "Fouka Bay",
-      "compoundId": 4
-    },
-    {
       "id": 62,
       "title": "CL6 TW2 AG",
       "number": "CL6 TW2 AG",
@@ -457,9 +443,16 @@
       "compoundId": 4
     },
     {
-      "id": 111,
-      "title": "SA-6B-104",
-      "number": "SA-6B-104",
+      "id": 58,
+      "title": "CL3-CH19-02",
+      "number": "CL3-CH19-02",
+      "compound": "Fouka Bay",
+      "compoundId": 4
+    },
+    {
+      "id": 57,
+      "title": "CL3-CH18-01",
+      "number": "CL3-CH18-01",
       "compound": "Fouka Bay",
       "compoundId": 4
     },
@@ -478,13 +471,6 @@
       "compoundId": 4
     },
     {
-      "id": 90,
-      "title": "CL4-CH27-01",
-      "number": "CL4-CH27-01",
-      "compound": "Fouka Bay",
-      "compoundId": 4
-    },
-    {
       "id": 95,
       "title": "ST5-CH48-01",
       "number": "ST5-CH48-01",
@@ -492,16 +478,16 @@
       "compoundId": 4
     },
     {
-      "id": 113,
-      "title": "CL9-CH22-01",
-      "number": "CL9-CH22-01",
+      "id": 111,
+      "title": "SA-6B-104",
+      "number": "SA-6B-104",
       "compound": "Fouka Bay",
       "compoundId": 4
     },
     {
-      "id": 112,
-      "title": "ST1-V15",
-      "number": "ST1-V15",
+      "id": 90,
+      "title": "CL4-CH27-01",
+      "number": "CL4-CH27-01",
       "compound": "Fouka Bay",
       "compoundId": 4
     },
@@ -509,6 +495,13 @@
       "id": 128,
       "title": "Cl3-tw3x-A.G",
       "number": "Cl3-tw3x-A.G",
+      "compound": "Fouka Bay",
+      "compoundId": 4
+    },
+    {
+      "id": 112,
+      "title": "ST1-V15",
+      "number": "ST1-V15",
       "compound": "Fouka Bay",
       "compoundId": 4
     },
@@ -527,9 +520,9 @@
       "compoundId": 4
     },
     {
-      "id": 344,
-      "title": "SA-9B-102",
-      "number": "SA-9B-102",
+      "id": 113,
+      "title": "CL9-CH22-01",
+      "number": "CL9-CH22-01",
       "compound": "Fouka Bay",
       "compoundId": 4
     },
@@ -537,13 +530,6 @@
       "id": 334,
       "title": "ST6-CH4-01",
       "number": "ST6-CH4-01",
-      "compound": "Fouka Bay",
-      "compoundId": 4
-    },
-    {
-      "id": 330,
-      "title": "SA-8A-104",
-      "number": "SA-8A-104",
       "compound": "Fouka Bay",
       "compoundId": 4
     },
@@ -562,9 +548,16 @@
       "compoundId": 4
     },
     {
-      "id": 347,
-      "title": "SA-2B-G04",
-      "number": "SA-2B-G04",
+      "id": 330,
+      "title": "SA-8A-104",
+      "number": "SA-8A-104",
+      "compound": "Fouka Bay",
+      "compoundId": 4
+    },
+    {
+      "id": 344,
+      "title": "SA-9B-102",
+      "number": "SA-9B-102",
       "compound": "Fouka Bay",
       "compoundId": 4
     },
@@ -576,16 +569,16 @@
       "compoundId": 4
     },
     {
-      "id": 348,
-      "title": "SA-2A-G04",
-      "number": "SA-2A-G04",
+      "id": 349,
+      "title": "SA-2B-G01",
+      "number": "SA-2B-G01",
       "compound": "Fouka Bay",
       "compoundId": 4
     },
     {
-      "id": 349,
-      "title": "SA-2B-G01",
-      "number": "SA-2B-G01",
+      "id": 348,
+      "title": "SA-2A-G04",
+      "number": "SA-2A-G04",
       "compound": "Fouka Bay",
       "compoundId": 4
     },
@@ -597,9 +590,23 @@
       "compoundId": 4
     },
     {
+      "id": 347,
+      "title": "SA-2B-G04",
+      "number": "SA-2B-G04",
+      "compound": "Fouka Bay",
+      "compoundId": 4
+    },
+    {
       "id": 364,
       "title": "ST1-V22",
       "number": "ST1-V22",
+      "compound": "Fouka Bay",
+      "compoundId": 4
+    },
+    {
+      "id": 359,
+      "title": "ST6-TH4-X1",
+      "number": "ST6-TH4-X1",
       "compound": "Fouka Bay",
       "compoundId": 4
     },
@@ -618,16 +625,16 @@
       "compoundId": 4
     },
     {
-      "id": 359,
-      "title": "ST6-TH4-X1",
-      "number": "ST6-TH4-X1",
+      "id": 357,
+      "title": "SA-2A-101",
+      "number": "SA-2A-101",
       "compound": "Fouka Bay",
       "compoundId": 4
     },
     {
-      "id": 357,
-      "title": "SA-2A-101",
-      "number": "SA-2A-101",
+      "id": 377,
+      "title": "CL11-CH10A-03",
+      "number": "CL11-CH10A-03",
       "compound": "Fouka Bay",
       "compoundId": 4
     },
@@ -646,13 +653,6 @@
       "compoundId": 4
     },
     {
-      "id": 370,
-      "title": "CL11-CH19B-01",
-      "number": "CL11-CH19B-01",
-      "compound": "Fouka Bay",
-      "compoundId": 4
-    },
-    {
       "id": 365,
       "title": "CL9-Ch18-01",
       "number": "CL9-Ch18-01",
@@ -660,25 +660,11 @@
       "compoundId": 4
     },
     {
-      "id": 377,
-      "title": "CL11-CH10A-03",
-      "number": "CL11-CH10A-03",
+      "id": 370,
+      "title": "CL11-CH19B-01",
+      "number": "CL11-CH19B-01",
       "compound": "Fouka Bay",
       "compoundId": 4
-    },
-    {
-      "id": 395,
-      "title": "ST2-25",
-      "number": "ST2-25",
-      "compound": "Fouka Bay",
-      "compoundId": 4
-    },
-    {
-      "id": 130,
-      "title": "T2-15",
-      "number": "T2-15",
-      "compound": "Playa",
-      "compoundId": 6
     },
     {
       "id": 394,
@@ -691,6 +677,20 @@
       "id": 321,
       "title": "Playa - U9-22",
       "number": "Playa - U9-22",
+      "compound": "Playa",
+      "compoundId": 6
+    },
+    {
+      "id": 395,
+      "title": "ST2-25",
+      "number": "ST2-25",
+      "compound": "Fouka Bay",
+      "compoundId": 4
+    },
+    {
+      "id": 130,
+      "title": "T2-15",
+      "number": "T2-15",
       "compound": "Playa",
       "compoundId": 6
     }
