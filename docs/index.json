@@ -2,13 +2,6 @@
   "updatedAt": "2026-08-09T05:20:22.039Z",
   "properties": [
     {
-      "id": 7,
-      "title": "Arezo 112",
-      "number": "Arezo 112",
-      "compound": "Marassi",
-      "compoundId": 3
-    },
-    {
       "id": 9,
       "title": "Vento 170",
       "number": "Vento 170",
@@ -16,16 +9,9 @@
       "compoundId": 3
     },
     {
-      "id": 8,
-      "title": "Salerno 86",
-      "number": "Salerno 86",
-      "compound": "Marassi",
-      "compoundId": 3
-    },
-    {
-      "id": 11,
-      "title": "Marina2-14LR-305",
-      "number": "Marina2-14LR-305",
+      "id": 7,
+      "title": "Arezo 112",
+      "number": "Arezo 112",
       "compound": "Marassi",
       "compoundId": 3
     },
@@ -72,9 +58,16 @@
       "compoundId": 3
     },
     {
-      "id": 32,
-      "title": "Marina View Azur 207",
-      "number": "Marina View Azur 207",
+      "id": 29,
+      "title": "Marina View - Turquoise 309",
+      "number": "Marina View - Turquoise 309",
+      "compound": "Marassi",
+      "compoundId": 3
+    },
+    {
+      "id": 28,
+      "title": "Marina2-14LR-404",
+      "number": "Marina2-14LR-404",
       "compound": "Marassi",
       "compoundId": 3
     },
@@ -93,9 +86,9 @@
       "compoundId": 3
     },
     {
-      "id": 31,
-      "title": "Marina2-8F-202",
-      "number": "Marina2-8F-202",
+      "id": 33,
+      "title": "Marina 2- 22L-205",
+      "number": "Marina 2- 22L-205",
       "compound": "Marassi",
       "compoundId": 3
     },
@@ -117,6 +110,13 @@
       "id": 53,
       "title": "Marina2-2K203",
       "number": "Marina2-2K203",
+      "compound": "Marassi",
+      "compoundId": 3
+    },
+    {
+      "id": 51,
+      "title": "Marina2-2K202",
+      "number": "Marina2-2K202",
       "compound": "Marassi",
       "compoundId": 3
     },
@@ -177,9 +177,16 @@
       "compoundId": 3
     },
     {
-      "id": 72,
-      "title": "Blanca -102/G01",
-      "number": "Blanca -102/G01",
+      "id": 59,
+      "title": "Marina 13j-106",
+      "number": "Marina 13j-106",
+      "compound": "Marassi",
+      "compoundId": 3
+    },
+    {
+      "id": 60,
+      "title": "Marina2-22M-402",
+      "number": "Marina2-22M-402",
       "compound": "Marassi",
       "compoundId": 3
     },
@@ -296,9 +303,9 @@
       "compoundId": 3
     },
     {
-      "id": 342,
-      "title": "Greek Village 17D-302",
-      "number": "Greek Village 17D-302",
+      "id": 340,
+      "title": "Vento 50",
+      "number": "Vento 50",
       "compound": "Marassi",
       "compoundId": 3
     },
@@ -355,13 +362,6 @@
       "id": 411,
       "title": "Verona 119",
       "number": "Verona 119",
-      "compound": "Marassi",
-      "compoundId": 3
-    },
-    {
-      "id": 413,
-      "title": "Altea DV-112",
-      "number": "Altea DV-112",
       "compound": "Marassi",
       "compoundId": 3
     },
@@ -471,16 +471,16 @@
       "compoundId": 4
     },
     {
-      "id": 61,
-      "title": "CL4-CH13-03",
-      "number": "CL4-CH13-03",
+      "id": 58,
+      "title": "CL3-CH19-02",
+      "number": "CL3-CH19-02",
       "compound": "Fouka Bay",
       "compoundId": 4
     },
     {
-      "id": 58,
-      "title": "CL3-CH19-02",
-      "number": "CL3-CH19-02",
+      "id": 61,
+      "title": "CL4-CH13-03",
+      "number": "CL4-CH13-03",
       "compound": "Fouka Bay",
       "compoundId": 4
     },
@@ -707,6 +707,13 @@
       "number": "Playa - U9-22",
       "compound": "Playa",
       "compoundId": 6
+    },
+    {
+      "id": 402,
+      "title": "CL11-Ch15-01",
+      "number": "CL11-Ch15-01",
+      "compound": "Fouka Bay",
+      "compoundId": 4
     },
     {
       "id": 130,
