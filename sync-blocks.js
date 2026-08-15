@@ -36,21 +36,38 @@ function makeVEvent(b) {
 
 async function main() {
   // Fetch all WP manual blocks (any booking status except trash)
-  let allBlocks = [];
+  // This script REWRITES every feed: it strips the manual blocks out and puts back
+  // whatever the blocks endpoint just told us about. So an unanswered call must not
+  // fall through to an empty list — that would strip every manual block from all 105
+  // feeds and publish those nights as free.
+  //
+  // We skip the patch pass entirely instead of exiting non-zero: the last step of
+  // this workflow is what dispatches the Kixedo sync every ~15 min, and a failed step
+  // would skip it and stall the real feed refresh too.
+  //
+  // NOTE (2026-08-15): this endpoint is a WordPress-era leftover and has been
+  // returning 403 since the bluekeys.co migration, so this path is ALWAYS taken and
+  // no manual block reaches the OTA feeds. Harmless only while nothing sets manual
+  // blocks. Either re-point this at Supabase or retire the script — see the Brain.
+  let allBlocks = null;
   try {
     const headers = {};
     if (WP_USER && WP_PASS) {
       headers['Authorization'] = 'Basic ' + Buffer.from(`${WP_USER}:${WP_PASS}`).toString('base64');
     }
     const res = await fetch(`${WP_URL}/wp-json/mynt/v1/wp-blocked`, { headers });
-    if (res.ok) {
-      allBlocks = await res.json();
-      console.log(`WP blocks: ${allBlocks.length}`);
-    } else {
-      console.error('wp-blocked endpoint returned', res.status);
-    }
+    if (!res.ok) throw new Error(`endpoint returned ${res.status}`);
+    const data = await res.json();
+    if (!Array.isArray(data)) throw new Error(`expected an array, got ${typeof data}`);
+    allBlocks = data;
+    console.log(`WP blocks: ${allBlocks.length}`);
   } catch (e) {
-    console.error('Could not reach WP endpoint:', e.message);
+    console.error(`[skip] could not read manual blocks (${e.message}) — leaving all feeds untouched`);
+  }
+
+  if (allBlocks === null) {
+    console.log('Done: 0 files updated (manual-block source unavailable)');
+    return;
   }
 
   // Group blocks by WP post ID

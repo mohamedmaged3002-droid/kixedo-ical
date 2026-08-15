@@ -22,19 +22,39 @@ async function loadManualBlocks() {
       headers['Authorization'] = 'Basic ' + Buffer.from(`${WP_USER}:${WP_PASS}`).toString('base64');
     }
     const res = await fetch(`${WP_URL}/wp-json/mynt/v1/wp-blocked`, { headers });
-    if (res.ok) {
-      const data = await res.json();
-      if (Array.isArray(data) && data.length > 0) {
-        // Attach kixedo_id so sync.js can group by it
-        const withKixedo = data
-          .map(b => ({ ...b, kixedo_id: wpToKixedo[b.wp_post_id] }))
-          .filter(b => b.kixedo_id);
-        console.log(`Loaded ${withKixedo.length} WP blocks (of ${data.length} total)`);
-        return withKixedo;
-      }
+    if (!res.ok) throw new Error(`endpoint returned ${res.status}`);
+    const data = await res.json();
+    if (Array.isArray(data) && data.length > 0) {
+      // Attach kixedo_id so sync.js can group by it
+      const withKixedo = data
+        .map(b => ({ ...b, kixedo_id: wpToKixedo[b.wp_post_id] }))
+        .filter(b => b.kixedo_id);
+      console.log(`Loaded ${withKixedo.length} WP blocks (of ${data.length} total)`);
+      return withKixedo;
     }
-  } catch {}
+  } catch (e) {
+    // Say so out loud. Feeds regenerate WITHOUT manual blocks when this fails, which
+    // re-opens any manually blocked night — it must never scroll by silently.
+    // This endpoint is a WordPress-era leftover and has 403'd since the bluekeys.co
+    // migration; see the note in sync-blocks.js.
+    console.error(`[warn] manual blocks unavailable (${e.message}) — feeds will carry Kixedo bookings only`);
+  }
   return [];
+}
+
+// Total VEVENTs currently published for the given property ids — the baseline the
+// collapse gate compares a fresh run against.
+function countEventsOnDisk(outDir, ids) {
+  let total = 0;
+  for (const id of ids) {
+    try {
+      const ics = fs.readFileSync(path.join(outDir, `${id}.ics`), 'utf8');
+      total += (ics.match(/BEGIN:VEVENT/g) || []).length;
+    } catch {
+      // No previous feed for this property (new unit) — contributes nothing.
+    }
+  }
+  return total;
 }
 
 // Only the 3 compounds whose units are on bluekeys.co (Mynt North Coast)
@@ -73,11 +93,20 @@ async function main() {
   let totalEvents = 0;
   const seenPropIds = new Set(); // deduplicate across compounds
 
-  // Collect all unique properties across compounds first
+  // Collect all unique properties across compounds first. getProperties throws
+  // rather than returning [] — a compound we cannot read is a hard failure, not an
+  // empty compound, so we abort and leave every last-good feed in place.
   const allProps = [];
   for (const compound of COMPOUNDS) {
-    const props = await client.getProperties(compound.id);
-    if (!props.length) { console.log(`  ${compound.name}: 0 properties — skipping`); continue; }
+    let props;
+    try {
+      props = await client.getProperties(compound.id);
+    } catch (err) {
+      throw new Error(`${compound.name} (${compound.id}) roster fetch failed: ${err.message}`);
+    }
+    if (!props.length) {
+      throw new Error(`${compound.name} (${compound.id}) returned 0 properties — refusing to publish`);
+    }
     console.log(`${compound.name} (${compound.id}): ${props.length} properties`);
     for (const prop of props) {
       if (seenPropIds.has(prop.id)) continue;
@@ -86,20 +115,56 @@ async function main() {
     }
   }
 
-  // Fetch bookings in parallel — 5 properties at a time to avoid rate limiting
+  // Fetch bookings in parallel — 5 properties at a time to avoid rate limiting.
+  // Nothing is written to disk in this phase: we stage every feed in memory so the
+  // collapse gate below can veto the whole run atomically.
+  const staged = [];  // { id, ics, events }
+  const skipped = []; // properties left at their last-good feed
   const CONCURRENCY = 5;
   for (let i = 0; i < allProps.length; i += CONCURRENCY) {
     const batch = allProps.slice(i, i + CONCURRENCY);
     await Promise.all(batch.map(async ({ prop, compound }) => {
-      const bookings = await client.getBookings12Months(compound.id, prop.id);
+      const { bookings, failedMonths } = await client.getBookings12Months(compound.id, prop.id);
+      // Stays in index.json either way: index membership is the liveness signal that
+      // detects a delisting (L-064), so a transient fetch error must not read as
+      // "this property is gone".
+      index.push({ id: prop.id, title: prop.title, number: prop.number, compound: compound.name, compoundId: compound.id });
+
+      if (failedMonths > 0) {
+        skipped.push(prop.id);
+        console.log(`  [${prop.id}] ${prop.title} — SKIPPED: ${failedMonths}/7 months unreadable, keeping last-good feed`);
+        return;
+      }
+
       const manualBlocks = manualBlocksById[prop.id] || [];
       const ics = generateIcal(prop, bookings, manualBlocks);
-      fs.writeFileSync(path.join(outDir, `${prop.id}.ics`), ics, 'utf8');
       const manualNote = manualBlocks.length ? ` (+${manualBlocks.length} manual)` : '';
       console.log(`  [${prop.id}] ${prop.title} — ${bookings.length} events${manualNote}`);
       totalEvents += bookings.length;
-      index.push({ id: prop.id, title: prop.title, number: prop.number, compound: compound.name, compoundId: compound.id });
+      staged.push({ id: prop.id, ics, events: bookings.length + manualBlocks.length });
     }));
+  }
+
+  // Collapse gate. Per-property skipping already stops a dropped month from emptying
+  // a feed, but a 200-with-empty-array would slip past it. Compare what we are about
+  // to publish against the last-good feeds on disk and refuse a mass de-blocking.
+  // Compare like with like: the on-disk baseline counts every VEVENT, so the staged
+  // side must include manual blocks too, not just bookings.
+  const stagedEvents = staged.reduce((n, s) => n + s.events, 0);
+  const prevEvents = countEventsOnDisk(outDir, staged.map(s => s.id));
+  if (prevEvents > 0 && stagedEvents < prevEvents * 0.5) {
+    throw new Error(
+      `collapse gate: about to publish ${stagedEvents} events where the last-good feeds `
+      + `hold ${prevEvents} for the same ${staged.length} properties — refusing to write. `
+      + `Re-run; if this persists the drop is real and the gate needs a manual override.`
+    );
+  }
+
+  for (const { id, ics } of staged) {
+    fs.writeFileSync(path.join(outDir, `${id}.ics`), ics, 'utf8');
+  }
+  if (skipped.length) {
+    console.log(`\n${skipped.length} feed(s) left at last-good: ${skipped.join(', ')}`);
   }
 
   // Write index.json — useful for building the WP post → Kixedo ID mapping
