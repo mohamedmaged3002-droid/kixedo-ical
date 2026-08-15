@@ -22,18 +22,23 @@ async function loadManualBlocks() {
       headers['Authorization'] = 'Basic ' + Buffer.from(`${WP_USER}:${WP_PASS}`).toString('base64');
     }
     const res = await fetch(`${WP_URL}/wp-json/mynt/v1/wp-blocked`, { headers });
-    if (res.ok) {
-      const data = await res.json();
-      if (Array.isArray(data) && data.length > 0) {
-        // Attach kixedo_id so sync.js can group by it
-        const withKixedo = data
-          .map(b => ({ ...b, kixedo_id: wpToKixedo[b.wp_post_id] }))
-          .filter(b => b.kixedo_id);
-        console.log(`Loaded ${withKixedo.length} WP blocks (of ${data.length} total)`);
-        return withKixedo;
-      }
+    if (!res.ok) throw new Error(`endpoint returned ${res.status}`);
+    const data = await res.json();
+    if (Array.isArray(data) && data.length > 0) {
+      // Attach kixedo_id so sync.js can group by it
+      const withKixedo = data
+        .map(b => ({ ...b, kixedo_id: wpToKixedo[b.wp_post_id] }))
+        .filter(b => b.kixedo_id);
+      console.log(`Loaded ${withKixedo.length} WP blocks (of ${data.length} total)`);
+      return withKixedo;
     }
-  } catch {}
+  } catch (e) {
+    // Say so out loud. Feeds regenerate WITHOUT manual blocks when this fails, which
+    // re-opens any manually blocked night — it must never scroll by silently.
+    // This endpoint is a WordPress-era leftover and has 403'd since the bluekeys.co
+    // migration; see the note in sync-blocks.js.
+    console.error(`[warn] manual blocks unavailable (${e.message}) — feeds will carry Kixedo bookings only`);
+  }
   return [];
 }
 
